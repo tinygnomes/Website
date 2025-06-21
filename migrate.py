@@ -215,9 +215,8 @@ def remove_inline_font_faces(soup):
     for style_tag in style_tags:
         if style_tag.string:
             original_css = style_tag.string
-            # A robust regex to remove @font-face rules, handling nested braces.
-            # This is a simplified version, for more complex cases a real CSS parser would be better.
-            cleaned_css, num_subs = re.subn(r'@font-face\s*\{[^{}]*(((?<BRACE>\{)[^{}]*|(?<-BRACE>\})[^{}]*)*(?(BRACE)(?!)))\}', '', original_css, flags=re.IGNORECASE | re.DOTALL)
+            # This regex is a simpler, Python-compatible version to remove @font-face rules.
+            cleaned_css, num_subs = re.subn(r'@font-face\s*\{.*?\}', '', original_css, flags=re.IGNORECASE | re.DOTALL)
             if num_subs > 0:
                 style_tag.string.replace_with(cleaned_css)
                 count += num_subs
