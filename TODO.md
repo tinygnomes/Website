@@ -9,7 +9,7 @@ This document outlines the tasks required to migrate website.tinygnomes.com from
     *   **Proposed Solution:** Replace the existing cookie dialog with a static notice stating that the website only uses technical cookies (for logged-in users).
     *   **Affected File:** [`website.tinygnomes.com/index.html`](website.tinygnomes.com/index.html) (specifically the `data-framer-name="Policy"` div and its child buttons).
 
-[COMPLETED] *   **Login Button Link:**
+*   **Login Button Link:**
     *   **Issue:** The "Login" button currently does not perform any action.
     *   **Proposed Solution:** Update the login button to link directly to `https://www.tinygnomes.com/quilt.fcgi`.
     *   **Affected File:** [`website.tinygnomes.com/index.html`](website.tinygnomes.com/index.html) (specifically the `a` tag with `data-framer-name="Log in"`).
