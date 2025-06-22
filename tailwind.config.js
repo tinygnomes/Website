@@ -13,7 +13,8 @@ module.exports = {
         rancho: ['Rancho', 'cursive'],
       },
       colors: {
-        'brand-blue': '#3a9afe',
+        'light-blue': '#3a9afe',
+        'dark-blue': 'rgb(0, 136, 187)',
         'brand-green': 'rgb(136, 187, 0)',
         'brand-orange': 'rgb(255, 187, 0)',
       }
