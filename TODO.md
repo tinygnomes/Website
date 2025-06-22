@@ -1,1 +1,0 @@
-- Header: On hover, Features, Pricing, Testimonials, FAQ and Sign up should be underlined. The buttons Home and Login instead should light up, and the text should change from white to blue.
