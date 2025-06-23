@@ -17,8 +17,8 @@ graph TD
 
 ## Detailed Task List
 
-1.  **Structure the hero section HTML with a two-column layout.**
-2.  **Implement the left column content:** headings and 'Free sign up' button.
-3.  **Implement the right column illustration with all its visual elements.**
-4.  **Apply Tailwind CSS classes to match the design, translating styles from the Framer HTML.**
-5.  **Implement mouse-over animations for interactive elements in the hero section.**
+1.  **Structured the hero section HTML with a two-column layout.** (Completed)
+2.  **Implemented the left column content:** headings and 'Free sign up' button. (Completed)
+3.  **Implemented the right column illustration with all its visual elements.** (Completed)
+4.  **Applied Tailwind CSS classes to match the design, translating styles from the Framer HTML.** (Completed)
+5.  **Implemented mouse-over animations for interactive elements in the hero section.** (Completed)

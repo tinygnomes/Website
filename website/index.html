@@ -39,10 +39,13 @@
         .hero-illustration:hover {
            transform: perspective(1500px) rotateY(-5deg);
         }
+        #features {
+            transition: transform 0.1s linear, opacity 0.1s linear;
+        }
     </style>
 </head>
 <body class="font-raleway">
-    <header class="sticky top-0 bg-white z-50 h-[114px]">
+    <header class="sticky top-0 bg-white z-50 h-[114px] shadow-md">
         <nav class="container mx-auto px-6 h-full flex justify-between items-center">
             <div class="flex items-center">
                 <a href="#" class="flex items-center">
@@ -51,7 +54,7 @@
             </div>
             <div class="hidden md:flex items-center space-x-2 border-3 border-brand-green rounded-full px-6 py-4 text-[28px]">
                 <a href="#" class="bg-brand-orange text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Home</a>
-                <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Features</a>
+                <a href="#features" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Features</a>
                 <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Pricing</a>
                 <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Testimonials</a>
                 <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">FAQ</a>
@@ -103,6 +106,162 @@
                 <img src="assets/Gnome.png" alt="Gnome" class="absolute zoom-gnome" style="top: 40.7%; left: 5.6%; height: 25%; width: 12%;">
             </div>
         </section>
+        <section id="features" class="features-section container mx-auto px-6 py-12">
+            <div class="features-title-container text-center mb-12">
+                <h1 class="text-6xl font-bold text-dark-blue font-raleway">What are our features?</h1>
+            </div>
+            <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/calendar">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/calendar-icon.png" class="zoom-image" alt="calendar-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">Calendar</h5>
+                            <p class="text-xl mt-2">Keep track of events, memos and tasks.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/compliance">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/compliance-icon.png" class="zoom-image" alt="compliance-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">Compliance</h5>
+                            <p class="text-xl mt-2">Ask your team questions regularly to stay on track.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/tasks">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/tasks-icon.png" class="zoom-image" alt="tasks-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">Tasks</h5>
+                            <p class="text-xl mt-2">Know what and when things need to get done.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/wikis">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/wikis-icon.png" class="zoom-image" alt="wikis-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">Wikis</h5>
+                            <p class="text-xl mt-2">Collaborative documents and a knowledge base.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/reports">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/reports-icon.png" class="zoom-image" alt="reports-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">Reports</h5>
+                            <p class="text-xl mt-2">Generate reports about your projects and their members.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/files">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/files-icon.png" class="zoom-image" alt="files-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">Files</h5>
+                            <p class="text-xl mt-2">Store and share documents, pictures and more.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/share">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/share-icon.png" class="zoom-image" alt="share-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">Share</h5>
+                            <p class="text-xl mt-2">Share files, wikis and more with people outside of Prolific.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/chat">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/chat-icon.png" class="zoom-image" alt="chat-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">Chat</h5>
+                            <p class="text-xl mt-2">Ask your team questions regularly to stay on track.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/more">
+                    <div class="feature-image-text flex items-start w-full">
+                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                            <img src="assets/more-icon.png" class="zoom-image" alt="more-icon" style="width: 120px; height: 120px;">
+                        </div>
+                        <div class="feature-text-content flex-1 ml-6">
+                            <h5 class="text-2xl font-bold font-raleway">More</h5>
+                            <p class="text-xl mt-2">Search, Private conversation, Scratch pad, and many more.</p>
+                            <div class="feature-link w-full text-right mt-4">
+                                <p class="text-light-blue text-xl">more…</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
+    <script>
+        const featuresSection = document.getElementById('features');
+
+        function handleScroll() {
+            const rect = featuresSection.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+
+            // Calculate the visibility of the element
+            const visibility = Math.max(0, Math.min(1, (windowHeight - rect.top) / rect.height));
+
+            // Start zooming from 0.8 and scale up to 1
+            const scale = 0.7 + 0.3 * visibility;
+            // Fade in as it becomes visible
+            const opacity = visibility;
+
+            featuresSection.style.transform = `scale(${scale})`;
+            featuresSection.style.opacity = opacity;
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        // Initial call to set the state
+        handleScroll();
+    </script>
 </body>
 </html>
