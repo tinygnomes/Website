@@ -17,6 +17,7 @@ module.exports = {
         'dark-blue': 'rgb(0, 136, 187)',
         'brand-green': 'rgb(136, 187, 0)',
         'brand-orange': 'rgb(255, 187, 0)',
+        'brand-pink': 'rgb(255, 136, 136)',
       }
     },
   },

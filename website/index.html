@@ -1,340 +1,496 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tiny Gnomes</title>
-    <meta name="description" content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page.">
-    <link rel="icon" href="assets/favicon.png">
+    <meta
+      name="description"
+      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
+    />
+    <link rel="icon" href="assets/favicon.png" />
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Tiny Gnomes">
-    <meta property="og:description" content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page.">
-    <meta property="og:image" content="assets/social-share.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tiny Gnomes" />
+    <meta
+      property="og:description"
+      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
+    />
+    <meta property="og:image" content="assets/social-share.png" />
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tiny Gnomes">
-    <meta name="twitter:description" content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page.">
-    <meta name="twitter:image" content="assets/social-share.png">
-    <link rel="canonical" href="https://website.tinygnomes.com/">
-    <link href="./dist/output.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter&family=Raleway:wght@400;700&family=Rancho&display=swap" rel="stylesheet">
-</head>
-<body class="font-raleway">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tiny Gnomes" />
+    <meta
+      name="twitter:description"
+      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
+    />
+    <meta name="twitter:image" content="assets/social-share.png" />
+    <link rel="canonical" href="https://website.tinygnomes.com/" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter&family=Raleway:wght@400;700&family=Rancho&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-raleway">
     <header class="sticky top-0 bg-white z-50 h-[114px] shadow-md">
-        <nav class="container mx-auto px-6 h-full flex justify-between items-center">
-            <div class="flex items-center">
-                <a href="#" class="flex items-center">
-                    <img src="assets/tg.svg" alt="TinyGnomes Logo" class="h-[72px]">
-                </a>
-            </div>
-            <div class="hidden md:flex items-center space-x-2 border-3 border-brand-green rounded-full px-6 py-4 text-[28px]">
-                <a href="#" class="bg-brand-orange text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Home</a>
-                <a href="#features" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Features</a>
-                <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Pricing</a>
-                <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Testimonials</a>
-                <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">FAQ</a>
-            </div>
-            <div class="hidden md:flex items-center space-x-4 text-[28px]">
-                <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline">Sign up</a>
-                <a href="#" class="bg-brand-green text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Login</a>
-            </div>
-            <div class="md:hidden">
-                <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </nav>
+      <nav class="container mx-auto px-6 h-full flex justify-between items-center">
+        <div class="flex items-center">
+          <a href="#" class="flex items-center">
+            <img src="assets/tg.svg" alt="TinyGnomes Logo" class="h-[72px]" />
+          </a>
+        </div>
+        <div class="hidden md:flex items-center space-x-2 border-3 border-brand-green rounded-full px-6 py-4 text-[28px]">
+          <a href="#" class="bg-brand-orange text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Home</a>
+          <a href="#features" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Features</a>
+          <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Pricing</a>
+          <a href="#testimonials" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Testimonials</a>
+          <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline px-2">FAQ</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-4 text-[28px]">
+          <a href="#" class="text-light-blue hover:text-opacity-90 hover:underline">Sign up</a>
+          <a href="#" class="bg-brand-green text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Login</a>
+        </div>
+        <div class="md:hidden">
+          <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
     </header>
-<main>
-        <section class="hero container mx-auto px-6 flex flex-col md:flex-row items-center justify-between" style="width: 1440px; padding: 50px 60px">
-            <div class="md:w-1/2 text-center" style="width: 379px">
-                <h1 class="text-5xl md:text-6xl font-bold text-dark-blue leading-tight font-raleway">
-                    For those<br>that must be<br><span class="text-7xl md:text-9xl">100%</span>
-                </h1>
-                <h2 class="text-5xl md:text-6xl font-raleway font-bold text-brand-green leading-tight mt-4">
-                    Accountable
-                </h2>
-                <svg class="block mx-auto" width="331" height="103" viewBox="-3 -3 331 103" fill="none" xmlns="http://www.w3.org/2000/svg" id="svg1995855108_296">
-<path d="M324.479 19.063C168.603 -0.521291 12.8862 28.8802 4.26503 43.1296C-4.35612 57.379 7.88694 81.0021 20.7646 80.6459C33.6422 80.2898 80.243 34.801 324.479 19.063Z" fill="#88BB00"></path>
-</svg>
-                <a href="#" class="mt-12 inline-block bg-brand-orange text-white px-10 py-4 rounded-full text-2xl font-bold hover:text-light-blue hover:opacity-75 zoom-button">Free sign up</a>
-            </div>
-            <div class="md:w-1/2 mt-8 md:mt-0 relative hero-illustration" style="width: 888px; height: 587px;">
-                <img src="assets/IllustrationBG.png" alt="Hero Illustration" class="absolute inset-0 w-full h-full object-contain">
-                <img src="assets/Focus.png" alt="Focus on the goal" class="absolute zoom-image" style="top: 81.1%; left: 86.4%; height: 11%; width: 11%;">
-                <img src="assets/ValleyOfDroppedBoxes.png" alt="Valley of the Dropped Boxes" class="absolute zoom-image" style="top: 44.8%; left: 83.3%; height: 24%; width: 16%;">
-                <img src="assets/RiverOfRevisions.png" alt="River of Revisions" class="absolute zoom-image" style="top: 67.0%; left: 65.9%; height: 24%; width: 16%;">
-                <img src="assets/GetShitDone.png" alt="Get sh*t done" class="absolute zoom-image" style="top: 9.0%; left: 60.8%; height: 11%; width: 11%;">
-                <img src="assets/Assign.png" alt="Assign" class="absolute zoom-image" style="top: 32.8%; left: 60.4%; height: 24%; width: 16%;">
-                <img src="assets/File.png" alt="File" class="absolute zoom-image" style="top: 14.3%; left: 73.8%; height: 24%; width: 16%;">
-                <img src="assets/Document.png" alt="Document" class="absolute zoom-image" style="top: 67.7%; left: 32.5%; height: 24%; width: 16%;">
-                <img src="assets/Review.png" alt="Review" class="absolute zoom-image" style="top: 50.3%; left: 46.0%; height: 24%; width: 16%;">
-                <img src="assets/BleakOutlook.png" alt="Bleak Outlook Ridge" class="absolute zoom-image" style="top: 5.7%; left: 39.4%; height: 24%; width: 16%;">
-                <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 30.3%; left: 51.6%; height: 7%; width: 3%;">
-                <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 25.5%; left: 55.3%; height: 7%; width: 3%;">
-                <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 27.1%; left: 58.6%; height: 7%; width: 3%;">
-                <img src="assets/Plan.png" alt="Plan" class="absolute zoom-image" style="top: 50.5%; left: 18.6%; height: 24%; width: 16%;">
-                <img src="assets/EnoughSlack.png" alt="Enough Slack to Hang Yourself Forest" class="absolute zoom-image" style="top: 20.4%; left: 18.6%; height: 24%; width: 16%;">
-                <img src="assets/StayOnPath.png" alt="Stay on the path" class="absolute zoom-image" style="top: 10.1%; left: 6.4%; height: 13%; width: 11%;">
-                <img src="assets/Gnome.png" alt="Gnome" class="absolute zoom-gnome" style="top: 40.7%; left: 5.6%; height: 24%; width: 12%;">
-            </div>
-        </section>
-        <section id="features" class="features-section container mx-auto px-6 py-12">
-            <div class="features-title-container text-center mb-12">
-                <h1 class="text-6xl font-bold text-dark-blue font-raleway">What are our features?</h1>
-            </div>
-            <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/calendar">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/calendar-icon.png" class="zoom-image" alt="calendar-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">Calendar</h5>
-                            <p class="text-xl mt-2">Keep track of events, memos and tasks.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/compliance">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/compliance-icon.png" class="zoom-image" alt="compliance-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">Compliance</h5>
-                            <p class="text-xl mt-2">Ask your team questions regularly to stay on track.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/tasks">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/tasks-icon.png" class="zoom-image" alt="tasks-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">Tasks</h5>
-                            <p class="text-xl mt-2">Know what and when things need to get done.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/wikis">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/wikis-icon.png" class="zoom-image" alt="wikis-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">Wikis</h5>
-                            <p class="text-xl mt-2">Collaborative documents and a knowledge base.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/reports">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/reports-icon.png" class="zoom-image" alt="reports-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">Reports</h5>
-                            <p class="text-xl mt-2">Generate reports about your projects and their members.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/files">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/files-icon.png" class="zoom-image" alt="files-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">Files</h5>
-                            <p class="text-xl mt-2">Store and share documents, pictures and more.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/share">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/share-icon.png" class="zoom-image" alt="share-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">Share</h5>
-                            <p class="text-xl mt-2">Share files, wikis and more with people outside of Prolific.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/chat">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/chat-icon.png" class="zoom-image" alt="chat-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">Chat</h5>
-                            <p class="text-xl mt-2">Ask your team questions regularly to stay on track.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/more">
-                    <div class="feature-image-text flex items-start w-full">
-                        <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                            <img src="assets/more-icon.png" class="zoom-image" alt="more-icon" style="width: 120px; height: 120px;">
-                        </div>
-                        <div class="feature-text-content flex-1 ml-6">
-                            <h5 class="text-2xl font-bold font-raleway">More</h5>
-                            <p class="text-xl mt-2">Search, Private conversation, Scratch pad, and many more.</p>
-                            <div class="feature-link w-full text-right mt-4">
-                                <p class="text-light-blue text-xl">more…</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </section>
-        <section id="trusted-by" class="container mx-auto px-6 py-12">
-            <div class="text-center mb-12">
-                <h1 class="text-6xl font-bold text-dark-blue font-raleway">You Trust Them, They Trust Us</h1>
-            </div>
-            <div class="w-full">
-                <div class="logo-section mb-12">
-                    <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Public & Private Companies</h3>
-                    <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
-                        <div class="h-[90px] flex justify-center items-center w-[196px]">
-                            <img src="assets/logo-aol.png" alt="Logo-AOL" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-att.png" alt="Logo-ATT" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-apple.png" alt="Logo-Apple" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[93px]">
-                            <img src="assets/logo-barracuda.png" alt="Logo-Barracuda" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[149px]">
-                            <img src="assets/logo-bae.png" alt="Logo-BAE" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-boeing.png" alt="Logo-Boeing" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[135px]">
-                            <img src="assets/logo-insomniac.png" alt="Insomniac-Games-Logo" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[93px]">
-                            <img src="assets/logo-barracuda.png" alt="Logo-Barracuda" class="max-h-full max-w-full object-contain">
-                        </div>
-                    </div>
+    <main>
+      <section
+        class="hero container mx-auto px-6 flex flex-col md:flex-row items-center justify-between"
+        style="width: 1440px; padding: 50px 60px"
+      >
+        <div class="md:w-1/2 text-center" style="width: 379px">
+          <h1 class="text-5xl md:text-6xl font-bold text-dark-blue leading-tight font-raleway">
+            For those<br />that must be<br /><span class="text-7xl md:text-9xl">100%</span>
+          </h1>
+          <h2 class="text-5xl md:text-6xl font-raleway font-bold text-brand-green leading-tight mt-4">Accountable</h2>
+          <svg
+            class="block mx-auto"
+            width="331"
+            height="103"
+            viewBox="-3 -3 331 103"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            id="svg1995855108_296"
+          >
+            <path
+              d="M324.479 19.063C168.603 -0.521291 12.8862 28.8802 4.26503 43.1296C-4.35612 57.379 7.88694 81.0021 20.7646 80.6459C33.6422 80.2898 80.243 34.801 324.479 19.063Z"
+              fill="#88BB00"
+            ></path>
+          </svg>
+          <a
+            href="#"
+            class="mt-12 inline-block bg-brand-orange text-white px-10 py-4 rounded-full text-2xl font-bold hover:text-light-blue hover:opacity-75 zoom-button"
+            >Free sign up</a
+          >
+        </div>
+        <div class="md:w-1/2 mt-8 md:mt-0 relative hero-illustration" style="width: 888px; height: 587px">
+          <img src="assets/IllustrationBG.png" alt="Hero Illustration" class="absolute inset-0 w-full h-full object-contain" />
+          <img
+            src="assets/Focus.png"
+            alt="Focus on the goal"
+            class="absolute zoom-image"
+            style="top: 81.1%; left: 86.4%; height: 11%; width: 11%"
+          />
+          <img
+            src="assets/ValleyOfDroppedBoxes.png"
+            alt="Valley of the Dropped Boxes"
+            class="absolute zoom-image"
+            style="top: 44.8%; left: 83.3%; height: 24%; width: 16%"
+          />
+          <img
+            src="assets/RiverOfRevisions.png"
+            alt="River of Revisions"
+            class="absolute zoom-image"
+            style="top: 67%; left: 65.9%; height: 24%; width: 16%"
+          />
+          <img
+            src="assets/GetShitDone.png"
+            alt="Get sh*t done"
+            class="absolute zoom-image"
+            style="top: 9%; left: 60.8%; height: 11%; width: 11%"
+          />
+          <img src="assets/Assign.png" alt="Assign" class="absolute zoom-image" style="top: 32.8%; left: 60.4%; height: 24%; width: 16%" />
+          <img src="assets/File.png" alt="File" class="absolute zoom-image" style="top: 14.3%; left: 73.8%; height: 24%; width: 16%" />
+          <img
+            src="assets/Document.png"
+            alt="Document"
+            class="absolute zoom-image"
+            style="top: 67.7%; left: 32.5%; height: 24%; width: 16%"
+          />
+          <img src="assets/Review.png" alt="Review" class="absolute zoom-image" style="top: 50.3%; left: 46%; height: 24%; width: 16%" />
+          <img
+            src="assets/BleakOutlook.png"
+            alt="Bleak Outlook Ridge"
+            class="absolute zoom-image"
+            style="top: 5.7%; left: 39.4%; height: 24%; width: 16%"
+          />
+          <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 30.3%; left: 51.6%; height: 7%; width: 3%" />
+          <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 25.5%; left: 55.3%; height: 7%; width: 3%" />
+          <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 27.1%; left: 58.6%; height: 7%; width: 3%" />
+          <img src="assets/Plan.png" alt="Plan" class="absolute zoom-image" style="top: 50.5%; left: 18.6%; height: 24%; width: 16%" />
+          <img
+            src="assets/EnoughSlack.png"
+            alt="Enough Slack to Hang Yourself Forest"
+            class="absolute zoom-image"
+            style="top: 20.4%; left: 18.6%; height: 24%; width: 16%"
+          />
+          <img
+            src="assets/StayOnPath.png"
+            alt="Stay on the path"
+            class="absolute zoom-image"
+            style="top: 10.1%; left: 6.4%; height: 13%; width: 11%"
+          />
+          <img src="assets/Gnome.png" alt="Gnome" class="absolute zoom-gnome" style="top: 40.7%; left: 5.6%; height: 24%; width: 12%" />
+        </div>
+      </section>
+      <section id="features" class="features-section container mx-auto px-6 py-12">
+        <div class="features-title-container text-center mb-12">
+          <h1 class="text-6xl font-bold text-dark-blue font-raleway">What are our features?</h1>
+        </div>
+        <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/calendar">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/calendar-icon.png" class="zoom-image" alt="calendar-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">Calendar</h5>
+                <p class="text-xl mt-2">Keep track of events, memos and tasks.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
                 </div>
-                <div class="logo-section mb-12">
-                    <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Education</h3>
-                    <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-stanford.png" alt="Logo-Stanford" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-princeton.png" alt="Logo-Princeton" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-mit.png" alt="Logo-MIT" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-duke.png" alt="Logo-Duke" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-columbia.png" alt="Logo-ColumbiaUniversity" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[180px]">
-                            <img src="assets/logo-caltech.png" alt="Logo-CalTech" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[138px]">
-                            <img src="assets/logo-tufts.png" alt="Logo-Tufts" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-usc.png" alt="Logo-USC" class="max-h-full max-w-full object-contain">
-                        </div>
-                    </div>
-                </div>
-                <div class="logo-section">
-                    <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Military & Other</h3>
-                    <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
-                        <div class="h-[90px] flex justify-center items-center w-[135px]">
-                            <img src="assets/logo-cern.png" alt="CERN-logo" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[69px]">
-                            <img src="assets/logo-army.jpg" alt="Army-logo" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[120px]">
-                            <img src="assets/logo-halliburton.png" alt="Logo-Halliburton" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[257px]">
-                            <img src="assets/logo-acm.jpg" alt="ACM-logo" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[257px]">
-                            <img src="assets/logo-aclu.jpg" alt="ACLU-logo" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[69px]">
-                            <img src="assets/logo-army.jpg" alt="Army-logo" class="max-h-full max-w-full object-contain">
-                        </div>
-                        <div class="h-[90px] flex justify-center items-center w-[90px]">
-                            <img src="assets/logo-boeing-alt.png" alt="Boeing logo" class="max-h-full max-w-full object-contain">
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </section>
+          </a>
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/compliance">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/compliance-icon.png" class="zoom-image" alt="compliance-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">Compliance</h5>
+                <p class="text-xl mt-2">Ask your team questions regularly to stay on track.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/tasks">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/tasks-icon.png" class="zoom-image" alt="tasks-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">Tasks</h5>
+                <p class="text-xl mt-2">Know what and when things need to get done.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/wikis">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/wikis-icon.png" class="zoom-image" alt="wikis-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">Wikis</h5>
+                <p class="text-xl mt-2">Collaborative documents and a knowledge base.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/reports">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/reports-icon.png" class="zoom-image" alt="reports-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">Reports</h5>
+                <p class="text-xl mt-2">Generate reports about your projects and their members.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/files">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/files-icon.png" class="zoom-image" alt="files-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">Files</h5>
+                <p class="text-xl mt-2">Store and share documents, pictures and more.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/share">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/share-icon.png" class="zoom-image" alt="share-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">Share</h5>
+                <p class="text-xl mt-2">Share files, wikis and more with people outside of TinyGnomes.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/chat">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/chat-icon.png" class="zoom-image" alt="chat-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">Chat</h5>
+                <p class="text-xl mt-2">Ask your team questions regularly to stay on track.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/more">
+            <div class="feature-image-text flex items-start w-full">
+              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
+                <img src="assets/more-icon.png" class="zoom-image" alt="more-icon" style="width: 120px; height: 120px" />
+              </div>
+              <div class="feature-text-content flex-1 ml-6">
+                <h5 class="text-2xl font-bold font-raleway">More</h5>
+                <p class="text-xl mt-2">Search, Private conversation, Scratch pad, and many more.</p>
+                <div class="feature-link w-full text-right mt-4">
+                  <p class="text-light-blue text-xl">more…</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section id="trusted-by" class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+          <h1 class="text-6xl font-bold text-dark-blue font-raleway">You Trust Them, They Trust Us</h1>
+        </div>
+        <div class="w-full">
+          <div class="logo-section mb-12">
+            <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Public & Private Companies</h3>
+            <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
+              <div class="h-[90px] flex justify-center items-center w-[196px]">
+                <img src="assets/logo-aol.png" alt="Logo-AOL" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-att.png" alt="Logo-ATT" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-apple.png" alt="Logo-Apple" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[93px]">
+                <img src="assets/logo-barracuda.png" alt="Logo-Barracuda" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[149px]">
+                <img src="assets/logo-bae.png" alt="Logo-BAE" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-boeing.png" alt="Logo-Boeing" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[135px]">
+                <img src="assets/logo-insomniac.png" alt="Insomniac-Games-Logo" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[93px]">
+                <img src="assets/logo-barracuda.png" alt="Logo-Barracuda" class="max-h-full max-w-full object-contain" />
+              </div>
+            </div>
+          </div>
+          <div class="logo-section mb-12">
+            <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Education</h3>
+            <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-stanford.png" alt="Logo-Stanford" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-princeton.png" alt="Logo-Princeton" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-mit.png" alt="Logo-MIT" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-duke.png" alt="Logo-Duke" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-columbia.png" alt="Logo-ColumbiaUniversity" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[180px]">
+                <img src="assets/logo-caltech.png" alt="Logo-CalTech" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[138px]">
+                <img src="assets/logo-tufts.png" alt="Logo-Tufts" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-usc.png" alt="Logo-USC" class="max-h-full max-w-full object-contain" />
+              </div>
+            </div>
+          </div>
+          <div class="logo-section">
+            <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Military & Other</h3>
+            <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
+              <div class="h-[90px] flex justify-center items-center w-[135px]">
+                <img src="assets/logo-cern.png" alt="CERN-logo" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[69px]">
+                <img src="assets/logo-army.jpg" alt="Army-logo" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[120px]">
+                <img src="assets/logo-halliburton.png" alt="Logo-Halliburton" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[257px]">
+                <img src="assets/logo-acm.jpg" alt="ACM-logo" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[257px]">
+                <img src="assets/logo-aclu.jpg" alt="ACLU-logo" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[69px]">
+                <img src="assets/logo-army.jpg" alt="Army-logo" class="max-h-full max-w-full object-contain" />
+              </div>
+              <div class="h-[90px] flex justify-center items-center w-[90px]">
+                <img src="assets/logo-boeing-alt.png" alt="Boeing logo" class="max-h-full max-w-full object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="container mx-auto px-6 py-12">
+        <div class="text-center mb-12">
+          <h1 class="text-6xl font-bold text-dark-blue font-raleway">Testimonials</h1>
+        </div>
+        <div class="flex overflow-x-auto gap-4 pb-4">
+          <div class="flex-shrink-0 w-[420px] h-[420px] bg-white border-3 border-brand-green rounded-2xl p-8 flex flex-col gap-8">
+            <div class="flex items-center gap-4">
+              <img
+                src="assets/testimonial-robert-buschel.png"
+                alt="Robert Buschel"
+                class="w-32 h-32 rounded-lg border-6 border-brand-orange"
+              />
+              <div>
+                <h4 class="text-2xl font-bold">Robert Buschel</h4>
+                <p class="text-lg text-brand-pink">Attorney at Law</p>
+              </div>
+            </div>
+            <p class="text-xl overflow-hidden h-28">
+              Utilizing File Sharing to archive recording of our conference calls was very useful during a large proposal writing process we
+              undertook with our joint venture partners. Using reminders, we can incorporate lead times into our purchasing process for raw
+              materials.
+            </p>
+            <div class="flex justify-end items-center">
+              <a href="./testimonials" class="text-light-blue font-bold hover:underline">read more...</a>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-[420px] h-[420px] bg-white border-3 border-brand-green rounded-2xl p-8 flex flex-col gap-8">
+            <div class="flex items-center gap-4">
+              <img
+                src="assets/testimonial-gary-vitullo.jpg"
+                alt="Dr. Gary Vitullo"
+                class="w-32 h-32 rounded-lg border-6 border-brand-orange"
+              />
+              <div>
+                <h4 class="text-2xl font-bold">Dr. Gary Vitullo</h4>
+                <p class="text-lg text-brand-pink">Chiropractor</p>
+              </div>
+            </div>
+            <p class="text-xl h-28 overflow-hidden">
+              I can't lug patient records and forms from office to office, so I needed a way to collect, store and be able to access large
+              amounts of information on my patients and the practice &mdash; securely, quickly and accurately. And I needed to be able to
+              accomplish all of this inexpensively.
+            </p>
+            <div class="flex justify-end items-center">
+              <a href="./testimonials" class="text-light-blue font-bold hover:underline">read more...</a>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-[420px] h-[420] bg-white border-3 border-brand-green rounded-2xl p-8 flex flex-col gap-8">
+            <div class="flex items-center gap-4">
+              <img
+                src="assets/testimonial-wes-isaak.jpg"
+                alt="Dr. Gary Vitullo"
+                class="w-32 h-32 rounded-lg border-6 border-brand-orange"
+              />
+              <div>
+                <h4 class="text-2xl font-bold">Wes Isaak</h4>
+                <p class="text-lg text-brand-pink">ECG Capital</p>
+              </div>
+            </div>
+            <p class="text-xl h-28 overflow-hidden">
+              We now communicate effectively and efficiently with all members of our team. We are much better at prioritizing and
+              controlling both simple and complex tasks. TinyGnomes helps keep projects and tasks moving and on schedule.
+            </p>
+            <div class="flex justify-end items-center">
+              <a href="./testimonials" class="text-light-blue font-bold hover:underline">read more...</a>
+            </div>
+          </div>
+          <div class="flex-shrink-0 w-[420px] h-[420px] bg-white border-3 border-brand-green rounded-2xl p-8 flex flex-col gap-8">
+            <div class="flex items-center gap-4">
+              <img src="assets/testimonial-linda-m.jpg" alt="Linda M" class="w-32 h-32 rounded-lg border-6 border-brand-orange" />
+              <div>
+                <h4 class="text-2xl font-bold">Linda M</h4>
+                <p class="text-lg text-brand-pink">Innovative leader in energy, transport, education, and social justice</p>
+              </div>
+            </div>
+            <p class="text-xl h-28 overflow-hidden">
+              I'm early on in the process of building my website; however, I'm already impressed by customer support's response time. Great
+              customer support ratings is something I consider before purchasing a theme. Utilizing File Sharing to archive recording of our
+              conference calls was very useful during a large proposal writing process we undertook with our joint venture partners. Using
+              reminders, we can incorporate lead times into our purchasing process for raw materials.
+            </p>
+            <div class="flex justify-end items-center">
+              <a href="./testimonials" class="text-light-blue font-bold hover:underline">read more...</a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script>
-        const animatedSections = [
-            document.getElementById('features'),
-            document.getElementById('trusted-by')
-        ];
+      const animatedSections = [
+        document.getElementById("features"),
+        document.getElementById("trusted-by"),
+        document.getElementById("testimonials"),
+      ];
 
-        function handleScroll() {
-            animatedSections.forEach(section => {
-                if (!section) return;
+      function handleScroll() {
+        animatedSections.forEach((section) => {
+          if (!section) return;
 
-                const rect = section.getBoundingClientRect();
-                const windowHeight = window.innerHeight - 210; // account for the sticky header
+          const rect = section.getBoundingClientRect();
+          const windowHeight = window.innerHeight - 210; // account for the sticky header
 
-                if (rect.top < windowHeight && rect.bottom >= 0) {
-                    const visibility = Math.max(0, Math.min(1, (windowHeight - rect.top) / rect.height));
-                    const scale = 0.7 + 0.3 * visibility;
-                    const opacity = visibility;
+          if (rect.top < windowHeight && rect.bottom >= 0) {
+            const visibility = Math.max(0, Math.min(1, (windowHeight - rect.top) / rect.height));
+            const scale = 0.7 + 0.3 * visibility;
+            const opacity = visibility;
 
-                    section.style.transform = `scale(${scale})`;
-                    section.style.opacity = opacity;
-                }
-            });
-        }
+            section.style.transform = `scale(${scale})`;
+            section.style.opacity = opacity;
+          }
+        });
+      }
 
-        window.addEventListener('scroll', handleScroll);
-        handleScroll();
+      window.addEventListener("scroll", handleScroll);
+      handleScroll();
     </script>
-</body>
+  </body>
 </html>
