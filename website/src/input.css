@@ -1,6 +1,12 @@
 @config "../../tailwind.config.js";
 @import "tailwindcss";
 
+@layer base {
+    html {
+        scroll-padding-top: 210px; /* Height of the sticky header */
+    }
+}
+
 .zoom-button, .zoom-image, .zoom-gnome, .hero-illustration {
     transition: transform 0.2s ease-in-out;
 }
@@ -21,3 +27,4 @@
 #features {
     transition: transform 0.1s linear, opacity 0.1s linear;
 }
+
