@@ -9,7 +9,7 @@ When a task is complete, mark it as done `[x]` and move it to the "Done" section
 - [ ] Add all the other pages
 
 ## In Progress
-- [ ]
+- [ ] Add the schedule demo section
 
 ## Future Ideas & Technical Debt
 - [ ] Review fonts used in the pages, remove unused fonts
@@ -17,3 +17,4 @@ When a task is complete, mark it as done `[x]` and move it to the "Done" section
 
 ## Recently Done
 - [x] Add the testimonials section
+- [x] Add the misc section (links)
