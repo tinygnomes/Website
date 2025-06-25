@@ -24,7 +24,7 @@
 .hero-illustration:hover {
    transform: perspective(1500px) rotateY(-5deg);
 }
-#features, #trusted-by, #testimonials, #misc {
+#features, #trusted-by, #testimonials, #misc, #schedule-demo {
     transition: transform 0.1s linear, opacity 0.1s linear;
 }
 

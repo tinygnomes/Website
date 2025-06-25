@@ -466,7 +466,10 @@
       <section id="misc" class="container mx-auto px-6 py-12">
         <div class="flex flex-wrap justify-center gap-8">
           <div class="relative w-[300px] zoom-button">
-            <a href="./new-misc/use-cases" class="block bg-brand-orange rounded-[31px] p-5 text-white no-underline overflow-hidden h-[417px]">
+            <a
+              href="./new-misc/use-cases"
+              class="block bg-brand-orange rounded-[31px] p-5 text-white no-underline overflow-hidden h-[417px]"
+            >
               <div class="aspect-square h-[136px] w-[136px] mx-auto my-14">
                 <img src="assets/use-cases.png" alt="Use cases image" class="w-full h-full object-cover" />
               </div>
@@ -530,6 +533,29 @@
           </div>
         </div>
       </section>
+      <section id="schedule-demo" class="container mx-auto px-6 py-12">
+        <div class="bg-gradient-to-br from-[#94D0DF] to-[#00B0DC] rounded-[30px] p-8 md:p-12 lg:px-24 lg:py-16">
+          <div class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-10">
+            <!-- Text Content -->
+            <div class="text-white text-center md:text-left flex-grow">
+              <h1 class="font-raleway font-bold text-4xl sm:text-5xl lg:text-[76px] leading-tight">Schedule a live demo...</h1>
+              <h2 class="font-raleway text-2xl sm:text-3xl lg:text-[46px] mt-4">We’ll answer all your questions</h2>
+            </div>
+            <!-- Button Group -->
+            <div class="flex flex-col items-center gap-8 flex-shrink-0">
+              <a href="./contact">
+                <img src="assets/cal.svg" alt="Calendar Icon" class="w-32 h-32 lg:w-48 lg:h-48" />
+              </a>
+              <a
+                href="./contact"
+                class="bg-white text-dark-blue font-bold font-raleway text-2xl lg:text-[46px] rounded-full px-8 lg:px-12 py-3 lg:py-4 zoom-button whitespace-nowrap"
+              >
+                Schedule
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script>
       const animatedSections = [
@@ -537,6 +563,7 @@
         document.getElementById("trusted-by"),
         document.getElementById("testimonials"),
         document.getElementById("misc"),
+        document.getElementById("schedule-demo")
       ];
 
       function handleScroll() {
