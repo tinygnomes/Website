@@ -27,8 +27,6 @@
 #features, #trusted-by, #testimonials, #misc, #schedule-demo {
     transition: transform 0.1s linear, opacity 0.1s linear;
 }
-
-
 .footer-top-shadow::before {
     content: "";
     position: absolute;
