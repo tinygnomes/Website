@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx @tailwindcss/cli -i ./website/src/input.css -o ./website/dist/output.css --watch",
-    "build": "npx @tailwindcss/cli -i ./website/src/input.css -o ./website/dist/output.css --minify"
+    "build": "npx @tailwindcss/cli -i ./website/src/input.css -o ./website/dist/output.css --minify",
+    "dev": "concurrently \"npm:watch:css\" \"node server.js\"",
+    "watch:css": "npx @tailwindcss/cli -i ./website/src/input.css -o ./website/dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +15,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.10",
-    "tailwindcss": "^4.1.10",
-    "http-server": "^14.1.1"
-  },
-  "dependencies": {
+    "concurrently": "^9.2.0",
+    "live-server": "^1.2.2",
+    "tailwindcss": "^4.1.10"
   }
 }

@@ -10,9 +10,12 @@ When a task is complete, mark it as done `[x]` and move it to the "Done" section
 
 ## In Progress
 - [x] Add all the other pages
+- [ ] Finish the content in some of the pages (eg. features)
 
 ## Future Ideas & Technical Debt
-- [ ]
+- [ ] Add image optimization to the build process
+- [ ] Perform an accessibility audit and address any findings
+- [ ] Investigate replacing PNG/JPG images with SVGs where possible
 
 ## Recently Done
 - [x] Add the footer to index.html

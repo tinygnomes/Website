@@ -35,6 +35,27 @@ Create a simple static website with animations.
 *   website/dist/output.css
 *   website/assets/   [All the website assets]
 
+## File Dependencies
+
+```mermaid
+graph TD
+    subgraph "Build Process"
+        A[package.json] --> B(npm scripts);
+        B --> C{tailwind.config.js};
+        B --> D[website/src/input.css];
+        C --> E[website/dist/output.css];
+        D --> E;
+    end
+
+    subgraph "Website"
+        F[website/index.html] --> G[website/dist/output.css];
+        F --> H[website/assets/];
+    end
+
+    A --> F;
+```
+
+
 ## Features
 
 *   Simple and clean design
