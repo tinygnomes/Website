@@ -30,7 +30,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter&family=Raleway:wght@400;700&family=Rancho&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter:wght@400;700&family=Raleway:wght@400;700&family=Rancho&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -51,7 +51,11 @@
         </div>
         <div class="hidden md:flex items-center space-x-4 text-[28px]">
           <a href="../contact" class="text-light-blue hover:text-opacity-90 hover:underline">Sign up</a>
-          <a href="https://www.tinygnomes.com/quilt.fcgi" class="bg-brand-green text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Login</a>
+          <a
+            href="https://www.tinygnomes.com/quilt.fcgi"
+            class="bg-brand-green text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold"
+            >Login</a
+          >
         </div>
         <div class="md:hidden">
           <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
@@ -63,10 +67,105 @@
       </nav>
     </header>
     <main>
-        <section class="container mx-auto px-6 py-12">
-            <h1 class="text-4xl font-bold text-dark-blue mb-8">Calendar Feature</h1>
-            <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
+      <div class="flex flex-col items-center py-12 bg-white">
+        <h1 class="font-raleway text-7xl font-bold text-center text-[#0088bb] leading-none">Calendar</h1>
+        <div class="bg-[#ffbb00] rounded-full h-5 w-full max-w-sm mt-5"></div>
+      </div>
+
+      <div class="relative flex flex-col items-center py-20 px-20">
+        <div class="absolute top-1/2 left-0 w-full h-full -translate-y-1/2 -translate-x-20 flex justify-center items-center z-10">
+          <img src="../assets/calendar-bg.png" alt="" class="w-[1819px] h-[745px] object-contain" />
+        </div>
+        <div class="relative flex flex-wrap justify-start items-end w-full max-w-[1320px] gap-2.5 z-20">
+          <div class="flex-1 min-w-[350px] flex flex-col gap-10 justify-center">
+            <h1 class="font-raleway text-6xl font-bold text-[#2d3c58] leading-tight">
+              View the big picture<br />Or, laser focus on just one project.
+            </h1>
+            <div class="flex items-center justify-center gap-2.5">
+              <div class="w-[250px] h-[250px] rounded-lg overflow-hidden zoom-image">
+                <img src="../assets/calendar-icon-features.png" alt="calendar-icon" class="w-full h-full object-cover" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex-1 min-w-[350px] h-[306px] sticky top-0 z-10 overflow-hidden zoom-image"
+          >
+            <img src="../assets/calendar-sticky.png" alt="" class="w-full h-full object-cover" />
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-start items-center py-12 px-20 max-w-7xl mx-auto">
+        <h3 class="font-inter text-4xl font-normal text-[#2d3c58] leading-snug max-w-4xl">
+          The most powerful Calendar you've ever used. What appears like a simple calendar, will help you, and you keep you on schedule.
+        </h3>
+      </div>
+
+      <div class="flex justify-center items-center py-12 px-40 max-w-7xl mx-auto">
+        <ul class="w-full list-disc pl-5">
+          <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+            <strong>Share your schedule &mdash;</strong> you have complete control, decide who sees one. Assign a project to an event, and
+            everyone in that project can see it. Mark it private, and only those part of the event are privy.
+          </li>
+          <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+            <strong>Never forget an event again &mdash;</strong> Add events months or years into the future, such as when insurance is due, or
+            when a business license expires.
+          </li>
+          <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+            <strong>Invite others to your event &mdash;</strong> Invite people in the system, but also those outside the system via Email.
+            Know who is coming before a meeting even happens.
+          </li>
+          <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+            <strong>Access your calendar from your Cell phone &mdash;</strong> You can view your calendar from our App (for iPhone/Android), or
+            from the site itself. Or from a mobile friendly text page. In any case, we have you covered
+            <a href="https://www.TinyGnomes.com/app" target="_blank" rel="noopener" class="text-[#0099ff] hover:underline">www.TinyGnomes.com/app.</a>
+          </li>
+          <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+            <strong>Sync with Outlook or Google Calendar &mdash;</strong> In the office, synchronize directly with Exchange Server. At home, or
+            on your own, synchronize with Outlook directly.
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col items-center gap-12 py-12 px-24 max-w-7xl mx-auto overflow-hidden">
+        <h1 class="font-raleway text-6xl font-bold text-[#0088bb] text-center leading-tight">
+          Great features you won't want to live without
+        </h1>
+        <div
+          class="border-4 border-[#88bb00] rounded-3xl flex flex-col items-center justify-center gap-16 py-20 px-16 w-full overflow-hidden"
+        >
+          <ol class="w-full list-decimal pl-5">
+            <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+              <strong>Map &mdash;</strong> Fill in the location with an actual address, and pop up a map form your cell phone.
+            </li>
+            <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+              <strong>Memos-</strong> Sometimes you just want to remember something, use Memos on the calendar to remind your whole team
+              about something important.
+            </li>
+            <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+              <strong>Tasks &mdash;</strong> Put any task on your calendar, and they can follow you from day to day until you close them.
+            </li>
+            <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+              <strong>Compliance &mdash;</strong> See at a glance that your team is answering the questions you need the answers to.
+            </li>
+            <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+              <strong>Feeds &mdash;</strong> Pull in time sensitive feeds from the. Display local sports events right on your calendar so
+              you know when traffic is going to be bad in the area.
+            </li>
+            <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+              <strong>Avoid it &mdash;</strong> Use the discussions attached directly to an event to review a teams needs before the meeting
+              date. If everyone does their job, the meeting can be avoided.
+            </li>
+            <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+              <strong>Auto-links &mdash;</strong> When you post a link, or a file in a discussion, they are automatically also pulled into a
+              clean easy to access list so they are ready when your meetings happen.
+            </li>
+            <li class="mt-8 font-inter text-4xl font-normal text-[#2d3c58] leading-snug">
+              <strong>SMS &mdash;</strong> Get a text message minutes or even days before your meetings.
+            </li>
+          </ol>
+        </div>
+      </div>
     </main>
     <footer class="bg-gray-100 pt-12 pb-24 relative footer-top-shadow">
       <div class="container mx-auto px-6 flex flex-wrap justify-between text-sm">
