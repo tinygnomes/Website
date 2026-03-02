@@ -95,3 +95,4 @@ Individual images in the hero section zoom on hover:
 ### Interactions
 *   Hover effects are handled by CSS (`global.css` has hover states).
 *   Mobile menu: TODO
+*   Active nav link: The page parses the URL hash (e.g., `#features`) on load and on `hashchange` to highlight the corresponding navigation link in the header. For the root path or empty hash, it defaults to the "Home" link.

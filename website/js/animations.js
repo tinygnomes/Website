@@ -58,4 +58,35 @@ document.addEventListener("DOMContentLoaded", function () {
       link.addEventListener("click", toggleMenu);
     });
   }
+
+  // 4. Active Nav Link Logic
+  const navLinks = document.querySelectorAll(".nav-link, .nav-link-mobile");
+
+  function updateActiveLink() {
+    const isHomePage = document.getElementById("features") !== null;
+
+    if (isHomePage) {
+      const currentHash = window.location.hash || "#";
+
+      navLinks.forEach((link) => {
+        const href = link.getAttribute("href");
+        if (
+          href === currentHash ||
+          (currentHash === "#" && (href === "#" || href === "./"))
+        ) {
+          const parent = link.closest(".main-nav, .mobile-nav-links");
+          if (parent) {
+            parent
+              .querySelectorAll(".active")
+              .forEach((el) => el.classList.remove("active"));
+            link.classList.add("active");
+          }
+        }
+      });
+    }
+  }
+
+  // Run on load and hash change
+  updateActiveLink();
+  window.addEventListener("hashchange", updateActiveLink);
 });
