@@ -1,0 +1,438 @@
+/* Main Stylesheet for TinyGnomes Website */
+
+/* 1. Variables & Tokens */
+:root {
+    /* Brand Colors (Locofy Mappings) */
+    --color-brand-orange: #ffbb00;
+    /* Orange-50 */
+    --color-brand-orange-shadow: rgba(255, 187, 0, 0.2);
+    --color-brand-green: #88bb00;
+    /* Chartreuse-Green-37 */
+    --color-brand-green-shadow: rgba(136, 187, 0, 0.2);
+    --color-brand-blue-light: #3a9afe;
+    /* Azure-61 */
+    --color-brand-blue-dark: #2d3c58;
+    /* Azure-26 */
+    --color-brand-azure-medium: #0088bb;
+    /* Azure-37 */
+    --color-brand-azure-shadow: rgba(0, 136, 187, 0.2);
+    --color-brand-cyan: #00b0dc;
+    /* Cyan-43 */
+    --color-brand-cyan-light: #94d0df;
+    /* Cyan-73 */
+    --color-brand-pink: #ff8888;
+    /* Red-77 */
+    --color-brand-pink-shadow: rgba(255, 136, 136, 0.2);
+    --color-brand-azure-medium: #0088bb;
+    /* Azure-37 */
+
+    /* Neutral Colors */
+    --color-white: #ffffff;
+    --color-black: #060606;
+    --color-grey-dark: #333333;
+    --color-grey-medium: #4c4c4c;
+    --color-grey-light: #e6e6e5;
+    --color-grey-bg: #eff3f4;
+
+    /* Semantic Colors */
+    --color-primary: var(--color-brand-orange);
+    --color-secondary: var(--color-brand-green);
+    --color-text-main: var(--color-brand-blue-dark);
+    --color-text-body: var(--color-grey-medium);
+    --color-link: var(--color-brand-blue-light);
+    --bg-body: var(--color-white);
+    --bg-header: var(--color-white);
+    --bg-header: var(--color-white);
+    --bg-footer: var(--color-grey-bg);
+    --color-shadow-header: rgba(228, 234, 235, 0.36);
+
+    /* Typography */
+    --font-primary: 'Raleway', sans-serif;
+    --font-secondary: 'Inter', sans-serif;
+
+    /* Sizes */
+    --container-width: 1440px;
+    --header-height: 114px;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-2xl: 48px;
+    --spacing-3xl: 64px;
+
+    /* Radii */
+    --radius-sm: 8px;
+    --radius-md: 20px;
+    --radius-lg: 30px;
+    --radius-full: 9999px;
+}
+
+/* 2. Reset & Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-primary);
+    color: var(--color-text-main);
+    background-color: var(--bg-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: opacity 0.2s ease;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+p {
+    margin: 0;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/* 3. Utility Classes */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.hidden-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .hidden-mobile {
+        display: flex;
+    }
+
+    .hidden-desktop {
+        display: none;
+    }
+}
+
+/* 4. Global Components */
+
+/* Header & Nav */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: auto;
+    /* Allow content to define height */
+    background-color: var(--bg-header);
+    /* Locofy: padding: var(--padding-12) var(--padding-60); */
+    padding: 12px 60px;
+    font-size: 28px;
+    font-family: var(--font-primary);
+    /* Locofy: .shadow style */
+    box-shadow: 0 10px 16px var(--color-shadow-header);
+}
+
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 72px;
+}
+
+.main-nav {
+    /* Locofy: .buttons style */
+    border: 3px solid var(--color-brand-green);
+    border-radius: 60px;
+    /* var(--br-60) */
+    /* Locofy: padding: var(--padding-12) 14px var(--padding-12) var(--padding-20); */
+    padding: 12px 14px 12px 20px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    /* Locofy layout uses individual wrappers */
+}
+
+.nav-link {
+    /* Locofy: .text-button style */
+    font-size: 28px;
+    color: var(--color-brand-blue-light);
+    /* Azure-61 */
+    font-weight: 400;
+    /* Regular */
+    /* Locofy: padding: var(--padding-12_7) var(--padding-16); */
+    padding: 12.7px 16px;
+    border-radius: 30px;
+    line-height: 33.6px;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: var(--color-brand-blue-light);
+    /* Remain same color */
+}
+
+.nav-link.active {
+    /* Locofy: .main-button style (Home link) */
+    background-color: var(--color-brand-orange);
+    color: var(--color-white);
+    font-weight: 700;
+    /* Locofy: padding: var(--padding-12_7) var(--padding-28); */
+    padding: 12.7px 28px;
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    /* var(--item-spacing-30) */
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.nav-auth .btn-login {
+    /* Locofy: .s-2 style */
+    background-color: var(--color-brand-green);
+    color: var(--color-white);
+    /* Locofy: padding: var(--padding-12_7) var(--padding-28); */
+    padding: 12.7px 28px;
+    border-radius: 30px;
+    font-weight: 700;
+    line-height: 33.6px;
+}
+
+.nav-auth .link-signup {
+    /* Locofy: .text-button5 */
+    color: var(--color-brand-blue-light);
+    /* Implicit? */
+    padding: 12.7px 16px;
+    border-radius: 30px;
+    font-weight: 400;
+    /* Regular based on .heading-4 inside it? Actually "Sign up" looks regular in screenshot? No, let's check. */
+    /* Locofy .text-button5 structure doesn't explicitly set weight, inherits? */
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+    color: var(--color-grey-medium);
+    padding: 8px;
+}
+
+/* Mobile Menu Overlay */
+.mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-white);
+    z-index: 2000;
+    display: none;
+    /* Toggled by JS */
+    flex-direction: column;
+    padding: 24px;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+}
+
+.mobile-menu-close {
+    font-size: 32px;
+    color: var(--color-grey-medium);
+}
+
+.mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.mobile-nav-links a {
+    color: var(--color-text-main);
+}
+
+.mobile-nav-auth {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* Footer */
+.site-footer {
+    background-color: var(--bg-footer);
+    padding-top: var(--spacing-3xl);
+    padding-bottom: 96px;
+    /* Space for cookie banner */
+    position: relative;
+    box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.footer-brand {
+    flex: 1 1 100%;
+    margin-bottom: var(--spacing-xl);
+}
+
+.footer-links-group {
+    display: flex;
+    flex: 2 1 auto;
+    justify-content: space-around;
+    gap: var(--spacing-xl);
+}
+
+.footer-app-downloads {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--spacing-xl);
+}
+
+.footer-column h6 {
+    margin-bottom: var(--spacing-md);
+    font-size: 16px;
+    color: var(--color-text-main);
+}
+
+.footer-column a {
+    display: block;
+    color: var(--color-link);
+    margin-bottom: var(--spacing-sm);
+}
+
+.app-btn {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: var(--color-black);
+    border-radius: var(--radius-sm);
+    padding: 4px;
+    margin-bottom: var(--spacing-md);
+}
+
+.app-btn img {
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .footer-brand {
+        flex: 0 0 25%;
+        margin-bottom: 0;
+    }
+
+    .footer-links-group {
+        flex: 0 0 50%;
+    }
+
+    .footer-app-downloads {
+        flex: 0 0 25%;
+        margin-top: 0;
+    }
+}
+
+/* Cookie Policy */
+.cookie-banner {
+    position: fixed;
+    bottom: 16px;
+    left: 0;
+    right: 0;
+    z-index: 2000;
+    display: none;
+    /* Controlled by JS */
+    justify-content: center;
+    align-items: center;
+}
+
+.cookie-content {
+    background-color: var(--color-white);
+    border-radius: var(--radius-sm);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    padding: var(--spacing-md);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    max-width: 600px;
+    margin: 0 16px;
+}
+
+.btn-accept {
+    background-color: var(--color-grey-light);
+    color: var(--color-grey-dark);
+    padding: 8px 16px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-accept:hover {
+    background-color: #d1d1d1;
+}

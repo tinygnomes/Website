@@ -1,671 +1,546 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiny Gnomes</title>
-    <meta
-      name="description"
-      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
-    />
-    <link rel="icon" href="assets/favicon.png" />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tiny Gnomes" />
-    <meta
-      property="og:description"
-      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
-    />
-    <meta property="og:image" content="assets/social-share.png" />
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tiny Gnomes" />
-    <meta
-      name="twitter:description"
-      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
-    />
-    <meta name="twitter:image" content="assets/social-share.png" />
-    <link rel="canonical" href="https://website.tinygnomes.com/" />
-    <link href="dist/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter&family=Raleway:wght@400;700&family=Rancho&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="font-raleway">
-    <header class="sticky top-0 bg-white z-50 h-[114px] shadow-md">
-      <nav class="container mx-auto px-6 h-full flex justify-between items-center">
-        <div class="flex items-center">
-          <a href="#" class="flex items-center">
-            <img src="assets/tg.svg" alt="TinyGnomes Logo" class="h-[72px]" />
-          </a>
-        </div>
-        <div class="hidden md:flex items-center space-x-2 border-3 border-brand-green rounded-full px-6 py-4 text-[28px]">
-          <a href="#" class="bg-brand-orange text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Home</a>
-          <a href="#features" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Features</a>
-          <a href="pricing" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Pricing</a>
-          <a href="#testimonials" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Testimonials</a>
-          <a href="faq" class="text-light-blue hover:text-opacity-90 hover:underline px-2">FAQ</a>
-        </div>
-        <div class="hidden md:flex items-center space-x-4 text-[28px]">
-          <a href="contact" class="text-light-blue hover:text-opacity-90 hover:underline">Sign up</a>
-          <a href="https://www.tinygnomes.com/quilt.fcgi" class="bg-brand-green text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Login</a>
-        </div>
-        <div class="md:hidden">
-          <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section
-        class="hero container mx-auto px-6 flex flex-col md:flex-row items-center justify-between"
-        style="width: 1440px; padding: 50px 60px"
-      >
-        <div class="md:w-1/2 text-center" style="width: 379px">
-          <h1 class="text-5xl md:text-6xl font-bold text-dark-blue leading-tight font-raleway">
-            For those<br />that must be<br /><span class="text-7xl md:text-9xl">100%</span>
-          </h1>
-          <h2 class="text-5xl md:text-6xl font-raleway font-bold text-brand-green leading-tight mt-4">Accountable</h2>
-          <svg
-            class="block mx-auto"
-            width="331"
-            height="103"
-            viewBox="-3 -3 331 103"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            id="svg1995855108_296"
-          >
-            <path
-              d="M324.479 19.063C168.603 -0.521291 12.8862 28.8802 4.26503 43.1296C-4.35612 57.379 7.88694 81.0021 20.7646 80.6459C33.6422 80.2898 80.243 34.801 324.479 19.063Z"
-              fill="#88BB00"
-            ></path>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiny Gnomes</title>
+  <meta name="description"
+    content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page." />
+  <link rel="icon" href="assets/favicon.png" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tiny Gnomes" />
+  <meta property="og:description"
+    content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page." />
+  <meta property="og:image" content="assets/social-share.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tiny Gnomes" />
+  <meta name="twitter:description"
+    content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page." />
+  <meta name="twitter:image" content="assets/social-share.png" />
+  <link rel="canonical" href="https://website.tinygnomes.com/" />
+
+  <!-- CSS -->
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/home.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter&family=Raleway:wght@400;700&family=Rancho&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="container nav-container">
+      <div class="logo">
+        <a href="#">
+          <img src="assets/tg.svg" alt="TinyGnomes Logo" />
+        </a>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="main-nav hidden-mobile">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="pricing" class="nav-link">Pricing</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="faq" class="nav-link">FAQ</a>
+      </div>
+
+      <div class="nav-auth hidden-mobile">
+        <a href="contact" class="link-signup">Sign up</a>
+        <a href="https://www.tinygnomes.com/quilt.fcgi" class="btn-login">Login</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="hidden-desktop">
+        <button class="mobile-menu-btn">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
-          <a
-            href="contact"
-            class="mt-12 inline-block bg-brand-orange text-white px-10 py-4 rounded-full text-2xl font-bold hover:text-light-blue hover:opacity-75 zoom-button"
-            >Free sign up</a
-          >
+        </button>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+          <button class="mobile-menu-close">&times;</button>
         </div>
-        <div class="md:w-1/2 mt-8 md:mt-0 relative hero-illustration" style="width: 888px; height: 587px">
-          <img src="assets/IllustrationBG.png" alt="Hero Illustration" class="absolute inset-0 w-full h-full object-contain" />
-          <img
-            src="assets/Focus.png"
-            alt="Focus on the goal"
-            class="absolute zoom-image"
-            style="top: 81.1%; left: 86.4%; height: 11%; width: 11%"
-          />
-          <img
-            src="assets/ValleyOfDroppedBoxes.png"
-            alt="Valley of the Dropped Boxes"
-            class="absolute zoom-image"
-            style="top: 44.8%; left: 83.3%; height: 24%; width: 16%"
-          />
-          <img
-            src="assets/RiverOfRevisions.png"
-            alt="River of Revisions"
-            class="absolute zoom-image"
-            style="top: 67%; left: 65.9%; height: 24%; width: 16%"
-          />
-          <img
-            src="assets/GetShitDone.png"
-            alt="Get sh*t done"
-            class="absolute zoom-image"
-            style="top: 9%; left: 60.8%; height: 11%; width: 11%"
-          />
-          <img src="assets/Assign.png" alt="Assign" class="absolute zoom-image" style="top: 32.8%; left: 60.4%; height: 24%; width: 16%" />
-          <img src="assets/File.png" alt="File" class="absolute zoom-image" style="top: 14.3%; left: 73.8%; height: 24%; width: 16%" />
-          <img
-            src="assets/Document.png"
-            alt="Document"
-            class="absolute zoom-image"
-            style="top: 67.7%; left: 32.5%; height: 24%; width: 16%"
-          />
-          <img src="assets/Review.png" alt="Review" class="absolute zoom-image" style="top: 50.3%; left: 46%; height: 24%; width: 16%" />
-          <img
-            src="assets/BleakOutlook.png"
-            alt="Bleak Outlook Ridge"
-            class="absolute zoom-image"
-            style="top: 5.7%; left: 39.4%; height: 24%; width: 16%"
-          />
-          <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 30.3%; left: 51.6%; height: 7%; width: 3%" />
-          <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 25.5%; left: 55.3%; height: 7%; width: 3%" />
-          <img src="assets/Tree.png" alt="Tree" class="absolute zoom-gnome" style="top: 27.1%; left: 58.6%; height: 7%; width: 3%" />
-          <img src="assets/Plan.png" alt="Plan" class="absolute zoom-image" style="top: 50.5%; left: 18.6%; height: 24%; width: 16%" />
-          <img
-            src="assets/EnoughSlack.png"
-            alt="Enough Slack to Hang Yourself Forest"
-            class="absolute zoom-image"
-            style="top: 20.4%; left: 18.6%; height: 24%; width: 16%"
-          />
-          <img
-            src="assets/StayOnPath.png"
-            alt="Stay on the path"
-            class="absolute zoom-image"
-            style="top: 10.1%; left: 6.4%; height: 13%; width: 11%"
-          />
-          <img src="assets/Gnome.png" alt="Gnome" class="absolute zoom-gnome" style="top: 40.7%; left: 5.6%; height: 24%; width: 12%" />
+        <div class="mobile-nav-links">
+          <a href="#" class="nav-link-mobile">Home</a>
+          <a href="#features" class="nav-link-mobile">Features</a>
+          <a href="pricing" class="nav-link-mobile">Pricing</a>
+          <a href="#testimonials" class="nav-link-mobile">Testimonials</a>
+          <a href="faq" class="nav-link-mobile">FAQ</a>
         </div>
-      </section>
-      <section id="features" class="features-section container mx-auto px-6 py-12">
-        <div class="features-title-container text-center mb-12">
-          <h1 class="text-6xl font-bold text-dark-blue font-raleway">What are our features?</h1>
-        </div>
-        <div class="features-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/calendar">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/calendar-icon.png" class="zoom-image" alt="calendar-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">Calendar</h5>
-                <p class="text-xl mt-2">Keep track of events, memos and tasks.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/compliance">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/compliance-icon.png" class="zoom-image" alt="compliance-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">Compliance</h5>
-                <p class="text-xl mt-2">Ask your team questions regularly to stay on track.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/tasks">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/tasks-icon.png" class="zoom-image" alt="tasks-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">Tasks</h5>
-                <p class="text-xl mt-2">Know what and when things need to get done.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/wikis">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/wikis-icon.png" class="zoom-image" alt="wikis-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">Wikis</h5>
-                <p class="text-xl mt-2">Collaborative documents and a knowledge base.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/reports">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/reports-icon.png" class="zoom-image" alt="reports-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">Reports</h5>
-                <p class="text-xl mt-2">Generate reports about your projects and their members.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/files">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/files-icon.png" class="zoom-image" alt="files-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">Files</h5>
-                <p class="text-xl mt-2">Store and share documents, pictures and more.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/share">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/share-icon.png" class="zoom-image" alt="share-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">Share</h5>
-                <p class="text-xl mt-2">Share files, wikis and more with people outside of TinyGnomes.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/chat">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/chat-icon.png" class="zoom-image" alt="chat-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">Chat</h5>
-                <p class="text-xl mt-2">Ask your team questions regularly to stay on track.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a class="feature-card flex flex-col items-center p-4 rounded-lg" href="features/more">
-            <div class="feature-image-text flex items-start w-full">
-              <div class="feature-image-wrapper rounded-lg flex-shrink-0">
-                <img src="assets/more-icon.png" class="zoom-image" alt="more-icon" style="width: 120px; height: 120px" />
-              </div>
-              <div class="feature-text-content flex-1 ml-6">
-                <h5 class="text-2xl font-bold font-raleway">More</h5>
-                <p class="text-xl mt-2">Search, Private conversation, Scratch pad, and many more.</p>
-                <div class="feature-link w-full text-right mt-4">
-                  <p class="text-light-blue text-xl">more…</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-      <section id="trusted-by" class="container mx-auto px-6 py-12">
-        <div class="text-center mb-12">
-          <h1 class="text-6xl font-bold text-dark-blue font-raleway">You Trust Them, They Trust Us</h1>
-        </div>
-        <div class="w-full">
-          <div class="logo-section mb-12">
-            <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Public & Private Companies</h3>
-            <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
-              <div class="h-[90px] flex justify-center items-center w-[196px]">
-                <img src="assets/logo-aol.png" alt="Logo-AOL" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-att.png" alt="Logo-ATT" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-apple.png" alt="Logo-Apple" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[93px]">
-                <img src="assets/logo-barracuda.png" alt="Logo-Barracuda" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[149px]">
-                <img src="assets/logo-bae.png" alt="Logo-BAE" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-boeing.png" alt="Logo-Boeing" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[135px]">
-                <img src="assets/logo-insomniac.png" alt="Insomniac-Games-Logo" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[93px]">
-                <img src="assets/logo-barracuda.png" alt="Logo-Barracuda" class="max-h-full max-w-full object-contain" />
-              </div>
-            </div>
-          </div>
-          <div class="logo-section mb-12">
-            <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Education</h3>
-            <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-stanford.png" alt="Logo-Stanford" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-princeton.png" alt="Logo-Princeton" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-mit.png" alt="Logo-MIT" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-duke.png" alt="Logo-Duke" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-columbia.png" alt="Logo-ColumbiaUniversity" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[180px]">
-                <img src="assets/logo-caltech.png" alt="Logo-CalTech" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[138px]">
-                <img src="assets/logo-tufts.png" alt="Logo-Tufts" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-usc.png" alt="Logo-USC" class="max-h-full max-w-full object-contain" />
-              </div>
-            </div>
-          </div>
-          <div class="logo-section">
-            <h3 class="text-4xl font-bold font-raleway text-brand-orange mb-8 text-center">Military & Other</h3>
-            <div class="flex flex-wrap justify-center items-center gap-x-16 gap-y-8">
-              <div class="h-[90px] flex justify-center items-center w-[135px]">
-                <img src="assets/logo-cern.png" alt="CERN-logo" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[69px]">
-                <img src="assets/logo-army.jpg" alt="Army-logo" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[120px]">
-                <img src="assets/logo-halliburton.png" alt="Logo-Halliburton" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[257px]">
-                <img src="assets/logo-acm.jpg" alt="ACM-logo" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[257px]">
-                <img src="assets/logo-aclu.jpg" alt="ACLU-logo" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[69px]">
-                <img src="assets/logo-army.jpg" alt="Army-logo" class="max-h-full max-w-full object-contain" />
-              </div>
-              <div class="h-[90px] flex justify-center items-center w-[90px]">
-                <img src="assets/logo-boeing-alt.png" alt="Boeing logo" class="max-h-full max-w-full object-contain" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="testimonials" class="container mx-auto px-6 py-12">
-        <div class="text-center mb-12">
-          <h1 class="text-6xl font-bold text-dark-blue font-raleway">Testimonials</h1>
-        </div>
-        <div class="flex overflow-x-auto gap-4 pb-4">
-          <div class="flex-shrink-0 w-[420px] h-[420px] bg-white border-3 border-brand-green rounded-2xl p-8 flex flex-col gap-8">
-            <div class="flex items-center gap-4">
-              <img
-                src="assets/testimonial-robert-buschel.png"
-                alt="Robert Buschel"
-                class="w-32 h-32 rounded-lg border-6 border-brand-orange"
-              />
-              <div>
-                <h4 class="text-2xl font-bold">Robert Buschel</h4>
-                <p class="text-lg text-brand-pink">Attorney at Law</p>
-              </div>
-            </div>
-            <p class="text-xl overflow-hidden h-28">
-              Utilizing File Sharing to archive recording of our conference calls was very useful during a large proposal writing process we
-              undertook with our joint venture partners. Using reminders, we can incorporate lead times into our purchasing process for raw
-              materials.
-            </p>
-            <div class="flex justify-end items-center">
-              <a href="testimonials#bushel" class="text-light-blue font-bold hover:underline">read more...</a>
-            </div>
-          </div>
-          <div class="flex-shrink-0 w-[420px] h-[420px] bg-white border-3 border-brand-green rounded-2xl p-8 flex flex-col gap-8">
-            <div class="flex items-center gap-4">
-              <img
-                src="assets/testimonial-gary-vitullo.jpg"
-                alt="Dr. Gary Vitullo"
-                class="w-32 h-32 rounded-lg border-6 border-brand-orange"
-              />
-              <div>
-                <h4 class="text-2xl font-bold">Dr. Gary Vitullo</h4>
-                <p class="text-lg text-brand-pink">Chiropractor</p>
-              </div>
-            </div>
-            <p class="text-xl h-28 overflow-hidden">
-              I can't lug patient records and forms from office to office, so I needed a way to collect, store and be able to access large
-              amounts of information on my patients and the practice &mdash; securely, quickly and accurately. And I needed to be able to
-              accomplish all of this inexpensively.
-            </p>
-            <div class="flex justify-end items-center">
-              <a href="testimonials#vitullo" class="text-light-blue font-bold hover:underline">read more...</a>
-            </div>
-          </div>
-          <div class="flex-shrink-0 w-[420px] h-[420] bg-white border-3 border-brand-green rounded-2xl p-8 flex flex-col gap-8">
-            <div class="flex items-center gap-4">
-              <img
-                src="assets/testimonial-wes-isaak.jpg"
-                alt="Dr. Gary Vitullo"
-                class="w-32 h-32 rounded-lg border-6 border-brand-orange"
-              />
-              <div>
-                <h4 class="text-2xl font-bold">Wes Isaak</h4>
-                <p class="text-lg text-brand-pink">ECG Capital</p>
-              </div>
-            </div>
-            <p class="text-xl h-28 overflow-hidden">
-              We now communicate effectively and efficiently with all members of our team. We are much better at prioritizing and
-              controlling both simple and complex tasks. TinyGnomes helps keep projects and tasks moving and on schedule.
-            </p>
-            <div class="flex justify-end items-center">
-              <a href="testimonials#isaak" class="text-light-blue font-bold hover:underline">read more...</a>
-            </div>
-          </div>
-          <div class="flex-shrink-0 w-[420px] h-[420px] bg-white border-3 border-brand-green rounded-2xl p-8 flex flex-col gap-8">
-            <div class="flex items-center gap-4">
-              <img src="assets/testimonial-linda-m.jpg" alt="Linda M" class="w-32 h-32 rounded-lg border-6 border-brand-orange" />
-              <div>
-                <h4 class="text-2xl font-bold">Linda M</h4>
-                <p class="text-lg text-brand-pink">Innovative leader in energy, transport, education, and social justice</p>
-              </div>
-            </div>
-            <p class="text-xl h-28 overflow-hidden">
-              I'm early on in the process of building my website; however, I'm already impressed by customer support's response time. Great
-              customer support ratings is something I consider before purchasing a theme. Utilizing File Sharing to archive recording of our
-              conference calls was very useful during a large proposal writing process we undertook with our joint venture partners. Using
-              reminders, we can incorporate lead times into our purchasing process for raw materials.
-            </p>
-            <div class="flex justify-end items-center">
-              <a href="testimonials#linda" class="text-light-blue font-bold hover:underline">read more...</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="misc" class="container mx-auto px-6 py-12">
-        <div class="flex flex-wrap justify-center gap-8">
-          <div class="relative w-[300px] zoom-button">
-            <a
-              href="use-cases"
-              class="block bg-brand-orange rounded-[31px] p-5 text-white no-underline overflow-hidden h-[417px]"
-            >
-              <div class="aspect-square h-[136px] w-[136px] mx-auto my-14">
-                <img src="assets/use-cases.png" alt="Use cases image" class="w-full h-full object-cover" />
-              </div>
-              <div class="h-[86px] flex justify-center items-center">
-                <h1 class="font-raleway text-4xl md:text-5xl lg:text-6xl font-bold text-center">Use cases</h1>
-              </div>
-            </a>
-            <div class="w-full h-[16px] mt-[10px]">
-              <svg width="100%" height="100%" viewBox="0 0 300 30" preserveAspectRatio="none">
-                <ellipse cx="150" cy="15" rx="150" ry="15" fill="rgb(255, 187, 0)" fill-opacity="0.2" />
-              </svg>
-            </div>
-          </div>
-          <div class="relative w-[300px] zoom-button">
-            <a href="faq" class="block bg-dark-blue rounded-[31px] p-5 text-white no-underline overflow-hidden h-[417px]">
-              <div class="aspect-square h-[136px] w-[136px] mx-auto my-14">
-                <img src="assets/faq.png" alt="FAQ image" class="w-full h-full object-cover" />
-              </div>
-              <div class="h-[86px] flex justify-center items-center">
-                <h1 class="font-raleway text-4xl md:text-5xl lg:text-6xl font-bold text-center">FAQ</h1>
-              </div>
-            </a>
-            <div class="w-full h-[16px] mt-[10px]">
-              <svg width="100%" height="100%" viewBox="0 0 300 30" preserveAspectRatio="none">
-                <ellipse cx="150" cy="15" rx="150" ry="15" fill="rgb(0, 136, 187)" fill-opacity="0.2" />
-              </svg>
-            </div>
-          </div>
-          <div class="relative w-[300px] zoom-button">
-            <a href="api" class="block bg-brand-green rounded-[31px] p-5 text-white no-underline overflow-hidden h-[417px]">
-              <div class="aspect-square h-[136px] w-[136px] mx-auto my-14">
-                <img src="assets/api.png" alt="API image" class="w-full h-full object-cover" />
-              </div>
-              <div class="h-[86px] flex justify-center items-center">
-                <h1 class="font-raleway text-4xl md:text-5xl lg:text-6xl font-bold text-center">API</h1>
-              </div>
-            </a>
-            <div class="w-full h-[16px] mt-[10px]">
-              <svg width="100%" height="100%" viewBox="0 0 300 30" preserveAspectRatio="none">
-                <ellipse cx="150" cy="15" rx="150" ry="15" fill="rgb(136, 187, 0)" fill-opacity="0.2" />
-              </svg>
-            </div>
-            <div class="absolute top-[230px] left-[12px] h-[210px] w-[88px] z-10">
-              <img src="assets/elements-2.png" alt="Elements image" class="w-full h-full object-cover" />
-            </div>
-          </div>
-          <div class="relative w-[300px] zoom-button">
-            <a href="security" class="block bg-brand-pink rounded-[31px] p-5 text-white no-underline overflow-hidden h-[417px]">
-              <div class="aspect-square h-[136px] w-[136px] mx-auto my-14">
-                <img src="assets/security.png" alt="Security image" class="w-full h-full object-cover" />
-              </div>
-              <div class="h-[86px] flex justify-center items-center">
-                <h1 class="font-raleway text-4xl md:text-5xl lg:text-6xl font-bold text-center">Security</h1>
-              </div>
-            </a>
-            <div class="w-full h-[16px] mt-[10px]">
-              <svg width="100%" height="100%" viewBox="0 0 300 30" preserveAspectRatio="none">
-                <ellipse cx="150" cy="15" rx="150" ry="15" fill="rgb(255, 136, 136)" fill-opacity="0.2" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="schedule-demo" class="container mx-auto px-6 py-12">
-        <div class="bg-gradient-to-br from-[#94D0DF] to-[#00B0DC] rounded-[30px] p-8 md:p-12 lg:px-24 lg:py-16">
-          <div class="flex flex-col md:flex-row items-center justify-center md:justify-between gap-10">
-            <!-- Text Content -->
-            <div class="text-white text-center md:text-left flex-grow">
-              <h1 class="font-raleway font-bold text-4xl sm:text-5xl lg:text-[76px] leading-tight">Schedule a live demo...</h1>
-              <h2 class="font-raleway text-2xl sm:text-3xl lg:text-[46px] mt-4">We’ll answer all your questions</h2>
-            </div>
-            <!-- Button Group -->
-            <div class="flex flex-col items-center gap-8 flex-shrink-0">
-              <a href="contact">
-                <img src="assets/cal.svg" alt="Calendar Icon" class="w-32 h-32 lg:w-48 lg:h-48" />
-              </a>
-              <a
-                href="contact"
-                class="bg-white text-dark-blue font-bold font-raleway text-2xl lg:text-[46px] rounded-full px-8 lg:px-12 py-3 lg:py-4 zoom-button whitespace-nowrap"
-              >
-                Schedule
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="bg-gray-100 pt-12 pb-24 relative footer-top-shadow">
-      <div class="container mx-auto px-6 flex flex-wrap justify-between text-sm">
-        <div class="w-full md:w-1/4 mb-8 md:mb-0">
-          <img src="assets/tg.svg" alt="TinyGnomes Logo" class="h-16 mb-4" />
-          <p class="text-gray-600 mt-8">Tiny Gnomes is a secure cloud-based suite of tools for project management.</p>
-          <p class="text-gray-600 mt-4">Finally, get your team on the same page.</p>
-        </div>
-        <div class="w-full md:w-1/2 flex justify-around">
-          <div class="space-y-2">
-            <h6 class="font-bold">Tiny Gnomes</h6>
-            <a href="about" class="block text-light-blue hover:underline mt-8">About Us</a>
-            <a href="terms" class="block text-light-blue hover:underline">Terms & Privacy</a>
-            <a href="security" class="block text-light-blue hover:underline">Security</a>
-          </div>
-          <div class="space-y-2">
-            <h6 class="font-bold">Solutions</h6>
-            <a href="white-label" class="block text-light-blue hover:underline mt-8">Customers</a>
-            <a href="white-label" class="block text-light-blue hover:underline">GavelAI (law)</a>
-            <a href="white-label" class="block text-light-blue hover:underline">Conductor Live (Sales)</a>
-            <a href="white-label" class="block text-light-blue hover:underline">White Label</a>
-          </div>
-          <div class="space-y-2">
-            <h6 class="font-bold">Resources</h6>
-            <a href="faq" class="block text-light-blue hover:underline mt-8">FAQ</a>
-            <a href="contact" class="block text-light-blue hover:underline">Contact Us</a>
-            <a href="integration" class="block text-light-blue hover:underline">Integration</a>
-            <a href="api" class="block text-light-blue hover:underline">Developer & API</a>
-          </div>
-        </div>
-        <div class="w-full md:w-1/4 mt-8 md:mt-0 flex flex-col items-center">
-          <h6 class="font-bold mb-2">Get the app</h6>
-          <div class="flex flex-col space-y-4">
-            <a
-              href="https://www.tinygnomes.com/app"
-              rel="noopener"
-              class="w-[150px] h-[50px] bg-black rounded-lg flex justify-center items-center p-1"
-            >
-              <img src="assets/app-store.png" alt="Download on the App Store" class="object-contain h-full" />
-            </a>
-            <a
-              href="https://www.tinygnomes.com/app"
-              rel="noopener"
-              class="w-[150px] h-[50px] bg-black rounded-lg flex justify-center items-center p-1"
-            >
-              <img src="assets/google-play.png" alt="Get it on Google Play" class="object-contain h-full" />
-            </a>
-          </div>
+        <div class="mobile-nav-auth">
+          <a href="contact" class="link-signup">Sign up</a>
+          <a href="https://www.tinygnomes.com/quilt.fcgi" class="btn-login"
+            style="background-color: var(--color-brand-green); color: white; padding: 8px 24px; border-radius: 9999px;">Login</a>
         </div>
       </div>
-      <div class="cookie-policy fixed bottom-4 inset-x-0 flex justify-center items-center z-50" style="display: none">
-        <div class="bg-white rounded-lg shadow-2xl p-4 flex items-center justify-between gap-6 max-w-2xl mx-4">
-          <p class="text-sm text-gray-700">
-            This website only uses technical cookies (if you login).
-            <a href="terms" class="text-light-blue hover:underline">Learn More…</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container animated-section">
+      <div class="hero-text">
+        <h1 class="hero-headline">
+          For those<br />that must be<br /><span class="highlight-big">100%</span>
+        </h1>
+        <h2 class="hero-subheadline">Accountable</h2>
+
+        <svg class="hero-underline-svg" viewBox="-3 -3 331 103" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M324.479 19.063C168.603 -0.521291 12.8862 28.8802 4.26503 43.1296C-4.35612 57.379 7.88694 81.0021 20.7646 80.6459C33.6422 80.2898 80.243 34.801 324.479 19.063Z"
+            fill="#88BB00"></path>
+        </svg>
+
+        <a href="contact" class="btn-hero-cta">Free sign up</a>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/IllustrationBG.png" alt="Hero Illustration" class="hero-bg-img" />
+
+        <!-- Floating Elements -->
+        <img src="assets/Focus.png" alt="Focus on the goal" class="abs-img floating-element"
+          style="top: 81.1%; left: 86.4%; height: 11%; width: 11%; animation-delay: 0s;" />
+        <img src="assets/ValleyOfDroppedBoxes.png" alt="Valley of the Dropped Boxes" class="abs-img floating-element"
+          style="top: 44.8%; left: 83.3%; height: 24%; width: 16%; animation-delay: 1s;" />
+        <img src="assets/RiverOfRevisions.png" alt="River of Revisions" class="abs-img floating-element"
+          style="top: 67%; left: 65.9%; height: 24%; width: 16%; animation-delay: 2s;" />
+        <img src="assets/GetShitDone.png" alt="Get sh*t done" class="abs-img floating-element"
+          style="top: 9%; left: 60.8%; height: 11%; width: 11%; animation-delay: 0.5s;" />
+        <img src="assets/Assign.png" alt="Assign" class="abs-img floating-element"
+          style="top: 32.8%; left: 60.4%; height: 24%; width: 16%; animation-delay: 1.5s;" />
+        <img src="assets/File.png" alt="File" class="abs-img floating-element"
+          style="top: 14.3%; left: 73.8%; height: 24%; width: 16%; animation-delay: 2.5s;" />
+        <img src="assets/Document.png" alt="Document" class="abs-img floating-element"
+          style="top: 67.7%; left: 32.5%; height: 24%; width: 16%; animation-delay: 0.8s;" />
+        <img src="assets/Review.png" alt="Review" class="abs-img floating-element"
+          style="top: 50.3%; left: 46%; height: 24%; width: 16%; animation-delay: 1.8s;" />
+        <img src="assets/BleakOutlook.png" alt="Bleak Outlook Ridge" class="abs-img floating-element"
+          style="top: 5.7%; left: 39.4%; height: 24%; width: 16%; animation-delay: 0.2s;" />
+        <img src="assets/Tree.png" alt="Tree" class="abs-img" style="top: 30.3%; left: 51.6%; height: 7%; width: 3%" />
+        <img src="assets/Tree.png" alt="Tree" class="abs-img" style="top: 25.5%; left: 55.3%; height: 7%; width: 3%" />
+        <img src="assets/Tree.png" alt="Tree" class="abs-img" style="top: 27.1%; left: 58.6%; height: 7%; width: 3%" />
+        <img src="assets/Plan.png" alt="Plan" class="abs-img floating-element"
+          style="top: 50.5%; left: 18.6%; height: 24%; width: 16%; animation-delay: 1.2s;" />
+        <img src="assets/EnoughSlack.png" alt="Enough Slack to Hang Yourself Forest" class="abs-img floating-element"
+          style="top: 20.4%; left: 18.6%; height: 24%; width: 16%; animation-delay: 2.2s;" />
+        <img src="assets/StayOnPath.png" alt="Stay on the path" class="abs-img floating-element"
+          style="top: 10.1%; left: 6.4%; height: 13%; width: 11%; animation-delay: 0.7s;" />
+        <img src="assets/Gnome.png" alt="Gnome" class="abs-img"
+          style="top: 40.7%; left: 5.6%; height: 24%; width: 12%" />
+      </div>
+    </section>
+
+    <section id="features" class="features container animated-section">
+      <h1 class="section-title">What are our features?</h1>
+      <div class="features-grid">
+
+        <!-- Card 1: Calendar -->
+        <a class="feature-item" href="features/calendar">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/calendar-icon.png" alt="calendar-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">Calendar</h5>
+              <p class="feature-desc">Keep track of events, memos and tasks.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2: Compliance -->
+        <a class="feature-item" href="features/compliance">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/compliance-icon.png" alt="compliance-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">Compliance</h5>
+              <p class="feature-desc">Ask your team questions regularly to stay on track.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3: Tasks -->
+        <a class="feature-item" href="features/tasks">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/tasks-icon.png" alt="tasks-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">Tasks</h5>
+              <p class="feature-desc">Know what and when things need to get done.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4: Wikis -->
+        <a class="feature-item" href="features/wikis">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/wikis-icon.png" alt="wikis-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">Wikis</h5>
+              <p class="feature-desc">Collaborative documents and a knowledge base.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 5: Reports -->
+        <a class="feature-item" href="features/reports">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/reports-icon.png" alt="reports-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">Reports</h5>
+              <p class="feature-desc">Generate reports about your projects and their members.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 6: Files -->
+        <a class="feature-item" href="features/files">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/files-icon.png" alt="files-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">Files</h5>
+              <p class="feature-desc">Store and share documents, pictures and more.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 7: Share -->
+        <a class="feature-item" href="features/share">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/share-icon.png" alt="share-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">Share</h5>
+              <p class="feature-desc">Share files, wikis and more with people outside of TinyGnomes.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 8: Chat -->
+        <a class="feature-item" href="features/chat">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/chat-icon.png" alt="chat-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">Chat</h5>
+              <p class="feature-desc">Ask your team questions regularly to stay on track.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 9: More -->
+        <a class="feature-item" href="features/more">
+          <div class="feature-content-wrapper">
+            <div class="feature-icon-wrapper">
+              <img src="assets/more-icon.png" alt="more-icon" />
+            </div>
+            <div class="feature-text">
+              <h5 class="feature-title">More</h5>
+              <p class="feature-desc">Search, Private conversation, Scratch pad, and many more.</p>
+              <div class="feature-more">more…</div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="trusted-by" class="trusted-by container animated-section">
+      <h1 class="section-title">You Trust Them, They Trust Us</h1>
+
+      <div class="logos-group">
+        <h3 class="logos-title">Public & Private Companies</h3>
+        <div class="logos-flex">
+          <div class="logo-item" style="width: 196px;"><img src="assets/logo-aol.png" alt="Logo-AOL" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-att.png" alt="Logo-ATT" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-apple.png" alt="Logo-Apple" /></div>
+          <div class="logo-item" style="width: 93px;"><img src="assets/logo-barracuda.png" alt="Logo-Barracuda" /></div>
+          <div class="logo-item" style="width: 149px;"><img src="assets/logo-bae.png" alt="Logo-BAE" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-boeing.png" alt="Logo-Boeing" /></div>
+          <div class="logo-item" style="width: 135px;"><img src="assets/logo-insomniac.png"
+              alt="Insomniac-Games-Logo" /></div>
+          <div class="logo-item" style="width: 93px;"><img src="assets/logo-barracuda.png" alt="Logo-Barracuda" /></div>
+        </div>
+      </div>
+
+      <div class="logos-group">
+        <h3 class="logos-title">Education</h3>
+        <div class="logos-flex">
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-stanford.png" alt="Logo-Stanford" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-princeton.png" alt="Logo-Princeton" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-mit.png" alt="Logo-MIT" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-duke.png" alt="Logo-Duke" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-columbia.png"
+              alt="Logo-ColumbiaUniversity" /></div>
+          <div class="logo-item" style="width: 180px;"><img src="assets/logo-caltech.png" alt="Logo-CalTech" /></div>
+          <div class="logo-item" style="width: 138px;"><img src="assets/logo-tufts.png" alt="Logo-Tufts" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-usc.png" alt="Logo-USC" /></div>
+        </div>
+      </div>
+
+      <div class="logos-group">
+        <h3 class="logos-title">Military & Other</h3>
+        <div class="logos-flex">
+          <div class="logo-item" style="width: 135px;"><img src="assets/logo-cern.png" alt="CERN-logo" /></div>
+          <div class="logo-item" style="width: 69px;"><img src="assets/logo-army.jpg" alt="Army-logo" /></div>
+          <div class="logo-item" style="width: 120px;"><img src="assets/logo-halliburton.png" alt="Logo-Halliburton" />
+          </div>
+          <div class="logo-item" style="width: 257px;"><img src="assets/logo-acm.jpg" alt="ACM-logo" /></div>
+          <div class="logo-item" style="width: 257px;"><img src="assets/logo-aclu.jpg" alt="ACLU-logo" /></div>
+          <div class="logo-item" style="width: 69px;"><img src="assets/logo-army.jpg" alt="Army-logo" /></div>
+          <div class="logo-item" style="width: 90px;"><img src="assets/logo-boeing-alt.png" alt="Boeing logo" /></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials container animated-section">
+      <h1 class="section-title">Testimonials</h1>
+      <div class="testimonials-scroll">
+
+        <!-- Card 1 -->
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <img src="assets/testimonial-robert-buschel.png" alt="Robert Buschel" class="testimonial-avatar" />
+            <div class="testimonial-info">
+              <h4>Robert Buschel</h4>
+              <p class="testimonial-role">Attorney at Law</p>
+            </div>
+          </div>
+          <p class="testimonial-quote">
+            Utilizing File Sharing to archive recording of our conference calls was very useful during a large proposal
+            writing process we undertook with our joint venture partners. Using reminders, we can incorporate lead times
+            into our purchasing process for raw materials.
           </p>
-          <div class="flex-shrink-0">
-            <button class="cookie-accept-button text-sm font-semibold py-2 px-4 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800">
-              Ok
-            </button>
+          <div class="testimonial-link">
+            <a href="testimonials#bushel">read more...</a>
           </div>
         </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <img src="assets/testimonial-gary-vitullo.png" alt="Dr. Gary Vitullo" class="testimonial-avatar" />
+            <div class="testimonial-info">
+              <h4>Dr. Gary Vitullo</h4>
+              <p class="testimonial-role">Chiropractor</p>
+            </div>
+          </div>
+          <p class="testimonial-quote">
+            I can't lug patient records and forms from office to office, so I needed a way to collect, store and be able
+            to access large amounts of information on my patients and the practice &mdash; securely, quickly and
+            accurately. And I needed to be able to accomplish all of this inexpensively.
+          </p>
+          <div class="testimonial-link">
+            <a href="testimonials#vitullo">read more...</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <img src="assets/testimonial-wes-isaak.jpg" alt="Wes Isaak" class="testimonial-avatar" />
+            <div class="testimonial-info">
+              <h4>Wes Isaak</h4>
+              <p class="testimonial-role">ECG Capital</p>
+            </div>
+          </div>
+          <p class="testimonial-quote">
+            We now communicate effectively and efficiently with all members of our team. We are much better at
+            prioritizing and controlling both simple and complex tasks. TinyGnomes helps keep projects and tasks moving
+            and on schedule.
+          </p>
+          <div class="testimonial-link">
+            <a href="testimonials#isaak">read more...</a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="testimonial-card">
+          <div class="testimonial-profile">
+            <img src="assets/testimonial-linda-m.jpg" alt="Linda M" class="testimonial-avatar" />
+            <div class="testimonial-info">
+              <h4>Linda M</h4>
+              <p class="testimonial-role">Innovative leader in energy, transport, education, and social justice</p>
+            </div>
+          </div>
+          <p class="testimonial-quote">
+            I'm early on in the process of building my website; however, I'm already impressed by customer support's
+            response time. Great customer support ratings is something I consider before purchasing a theme.
+          </p>
+          <div class="testimonial-link">
+            <a href="testimonials#linda">read more...</a>
+          </div>
+        </div>
+
       </div>
-    </footer>
-    <script>
-      const animatedSections = [
-        document.getElementById("features"),
-        document.getElementById("trusted-by"),
-        document.getElementById("testimonials"),
-        document.getElementById("misc"),
-        document.getElementById("schedule-demo"),
-      ];
+    </section>
 
-      function handleScroll() {
-        animatedSections.forEach((section) => {
-          if (!section) return;
+    <section id="misc" class="misc container animated-section">
+      <div class="misc-grid">
 
-          const rect = section.getBoundingClientRect();
-          const windowHeight = window.innerHeight - 210; // account for the sticky header
+        <!-- Use Cases -->
+        <div class="misc-card-wrapper wrapper-use-cases">
+          <a href="use-cases" class="misc-card-link card-use-cases">
+            <div class="card-icon-area">
+              <img src="assets/use-cases.png" alt="Use cases image" />
+            </div>
+            <div class="card-title-area">
+              <h1 class="card-title">Use cases</h1>
+            </div>
+          </a>
+          <div class="card-shadow"></div>
+        </div>
 
-          if (rect.top < windowHeight && rect.bottom >= 0) {
-            const visibility = Math.max(0, Math.min(1, (windowHeight - rect.top) / rect.height));
-            const scale = 0.7 + 0.3 * visibility;
-            const opacity = visibility;
+        <!-- FAQ -->
+        <div class="misc-card-wrapper wrapper-faq">
+          <a href="faq" class="misc-card-link card-faq">
+            <div class="card-icon-area">
+              <img src="assets/faq.png" alt="FAQ image" />
+            </div>
+            <div class="card-title-area">
+              <h1 class="card-title">FAQ</h1>
+            </div>
+          </a>
+          <div class="card-shadow"></div>
+        </div>
 
-            section.style.transform = `scale(${scale})`;
-            section.style.opacity = opacity;
-          }
-        });
-      }
+        <!-- API -->
+        <div class="misc-card-wrapper wrapper-api">
+          <a href="api" class="misc-card-link card-api">
+            <div class="card-icon-area">
+              <img src="assets/api.png" alt="API image" />
+            </div>
+            <div class="card-title-area">
+              <h1 class="card-title">API</h1>
+            </div>
+          </a>
+          <!-- Absolute Element (Gnome) outside card to avoid overflow clipping -->
+          <div class="card-gnome-overlay">
+            <img src="assets/elements-2.png" alt="Gnome" />
+          </div>
+          <div class="card-shadow"></div>
+        </div>
 
-      window.addEventListener("scroll", handleScroll);
-      handleScroll();
+        <!-- Security -->
+        <div class="misc-card-wrapper wrapper-security">
+          <a href="security" class="misc-card-link card-security">
+            <div class="card-icon-area">
+              <img src="assets/security.png" alt="Security image" />
+            </div>
+            <div class="card-title-area">
+              <h1 class="card-title">Security</h1>
+            </div>
+          </a>
+          <div class="card-shadow"></div>
+        </div>
 
-      document.addEventListener("DOMContentLoaded", function () {
-        const cookiePolicy = document.querySelector(".cookie-policy");
-        const acceptButton = document.querySelector(".cookie-accept-button");
+      </div>
+    </section>
 
-        if (cookiePolicy && acceptButton) {
-          // Check if the user has already accepted the cookies
-          if (!localStorage.getItem("cookieConsent")) {
-            cookiePolicy.style.display = "flex";
-          }
+    <section id="schedule-demo" class="schedule-demo container animated-section">
+      <div class="schedule-box">
+        <div class="schedule-text">
+          <h1 class="schedule-title">Schedule a live demo...</h1>
+          <h2 class="schedule-subtitle">We’ll answer all your questions</h2>
+        </div>
+        <div class="schedule-actions">
+          <a href="contact">
+            <img src="assets/cal.svg" alt="Calendar Icon" style="width: 128px; height: 128px;" />
+          </a>
+          <a href="contact" class="btn-schedule">Schedule</a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-          acceptButton.addEventListener("click", function () {
-            localStorage.setItem("cookieConsent", "true");
-            cookiePolicy.style.display = "none";
-          });
-        }
-      });
-    </script>
-  </body>
+  <footer class="site-footer">
+    <div class="container ">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="assets/tg.svg" alt="TinyGnomes Logo" style="height: 64px; margin-bottom: 16px;" />
+          <p style="color: var(--color-text-body); margin-top: 32px;">Tiny Gnomes is a secure cloud-based suite of tools
+            for project management.</p>
+          <p style="color: var(--color-text-body); margin-top: 16px;">Finally, get your team on the same page.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-column">
+            <h6>Tiny Gnomes</h6>
+            <a href="about">About Us</a>
+            <a href="terms">Terms & Privacy</a>
+            <a href="security">Security</a>
+          </div>
+
+          <div class="footer-column">
+            <h6>Solutions</h6>
+            <a href="white-label">Customers</a>
+            <a href="white-label">GavelAI (law)</a>
+            <a href="white-label">Conductor Live (Sales)</a>
+            <a href="white-label">White Label</a>
+          </div>
+
+          <div class="footer-column">
+            <h6>Resources</h6>
+            <a href="faq">FAQ</a>
+            <a href="contact">Contact Us</a>
+            <a href="integration">Integration</a>
+            <a href="api">Developer & API</a>
+          </div>
+        </div>
+
+        <div class="footer-app-downloads">
+          <h6 style="margin-bottom: 8px; font-weight: 700;">Get the app</h6>
+          <a href="https://www.tinygnomes.com/app" rel="noopener" class="app-btn">
+            <img src="assets/app-store.png" alt="Download on the App Store" />
+          </a>
+          <a href="https://www.tinygnomes.com/app" rel="noopener" class="app-btn">
+            <img src="assets/google-play.png" alt="Get it on Google Play" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cookie-banner">
+      <div class="cookie-content">
+        <p style="font-size: 14px; color: var(--color-grey-dark);">
+          This website only uses technical cookies (if you login).
+          <a href="terms" style="color: var(--color-link); text-decoration: underline;">Learn More…</a>
+        </p>
+        <button class="btn-accept">Ok</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/animations.js"></script>
+</body>
+
 </html>

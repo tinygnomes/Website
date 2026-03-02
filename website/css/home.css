@@ -1,0 +1,605 @@
+/* Styles for Home Page Sections */
+
+/* Animation Classes */
+.animated-section {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animated-section.is-visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    /* Locofy: padding: var(--padding-50) var(--padding-60); gap: var(--item-spacing-52); */
+    padding: 50px 60px;
+    align-items: center;
+    gap: 52px;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.hero-text {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.hero-headline {
+    /* Locofy: .for-those style */
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--color-brand-azure-medium);
+    /* Azure-37 */
+    margin-bottom: 0;
+}
+
+.hero-headline .highlight-big {
+    /* Locofy: .margin style */
+    font-size: 112px;
+    line-height: 112px;
+    display: block;
+    /* It was in a block in Locofy */
+    font-weight: 700;
+}
+
+.hero-subheadline {
+    /* Locofy: .accountable -> .heading-4 */
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--color-brand-green);
+    /* Chartreuse-Green-37 */
+    margin-top: 0;
+}
+
+.hero-underline-svg {
+    display: block;
+    margin: 10px auto 0;
+    width: 100%;
+    max-width: 331px;
+    height: auto;
+}
+
+
+.btn-hero-cta {
+    display: inline-block;
+    background-color: var(--color-brand-orange);
+    color: var(--color-white);
+    /* Locofy: padding: var(--padding-12_7) var(--padding-28); */
+    padding: 12.7px 28px;
+    border-radius: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33.6px;
+    margin-top: 30px;
+    /* var(--item-spacing-30) */
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.btn-hero-cta:hover {
+    transform: scale(1.05);
+    /* zoom-button effect */
+    opacity: 0.9;
+}
+
+.hero-visual {
+    position: relative;
+    width: 100%;
+    max-width: 888px;
+    aspect-ratio: 888/587;
+    margin-top: var(--spacing-xl);
+}
+
+@media (min-width: 768px) {
+    .hero-visual {
+        /* width: 50%; remove width constraint */
+        flex: 1;
+        /* Allow to grow */
+        margin-top: 0;
+        max-width: none;
+        /* Allow to exceed 888px if needed, or keep it? Locofy has max-width: 100% */
+    }
+}
+
+.hero-visual {
+    transition: transform 0.5s ease;
+    transform: perspective(1200px);
+}
+
+.hero-visual:hover {
+    transform: perspective(1200px) rotateY(-4deg);
+}
+
+
+.hero-bg-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Absolute Positioning for Hero Elements from existing HTML */
+.abs-img {
+    position: absolute;
+    z-index: 10;
+    transition: transform 0.3s ease;
+}
+
+.abs-img:hover {
+    transform: scale(1.3);
+}
+
+/* Specific Shake/Zoom overrides */
+.abs-img[src*="Gnome.png"]:hover,
+.abs-img[src*="Tree.png"]:hover {
+    transform: scale(1.6);
+}
+
+.abs-img[src*="StayOnPath.png"]:hover,
+.abs-img[src*="GetShitDone.png"]:hover,
+.abs-img[src*="Focus.png"]:hover {
+    transform: scale(1);
+    /* Disable zoom */
+}
+
+/* Features Section */
+.features {
+    padding: 50px 60px;
+    /* var(--padding-50) var(--padding-60) */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 60px;
+    color: var(--color-brand-azure-medium);
+    /* Azure-37 */
+    margin-bottom: 50px;
+    /* var(--item-spacing-50) */
+    font-weight: 700;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Locofy: gap: 29.4px 30px; */
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .features-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.feature-item {
+    /* Locofy: padding: var(--padding-20) var(--padding-10); */
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0;
+    /* Locofy doesn't seem to have border-radius on the card itself, only inner elements? */
+    transition: transform 0.2s;
+}
+
+.feature-item:hover {
+    transform: scale(1.02);
+}
+
+.feature-content-wrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* Locofy: center */
+    /* Locofy: gap: var(--item-spacing-40); */
+    gap: 40px;
+}
+
+.feature-icon-wrapper {
+    flex-shrink: 0;
+    border-radius: 12px;
+    /* var(--br-12) */
+    overflow: hidden;
+}
+
+.feature-icon-wrapper img {
+    width: 100px;
+    /* var(--width-100) */
+    /* height: auto; */
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.feature-item:hover .feature-icon-wrapper img {
+    transform: scale(1.1);
+}
+
+.feature-text {
+    flex: 1;
+    margin-left: 0;
+    /* Reset margin because we use gap */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* var(--item-spacing-20) */
+}
+
+.feature-title {
+    font-size: 22px;
+    /* Inherited from container12 */
+    font-weight: 700;
+    line-height: 26.4px;
+    margin-bottom: 0;
+    color: var(--color-brand-blue-dark);
+    /* Azure-26 */
+}
+
+.feature-desc {
+    font-size: 20px;
+    /* var(--item-spacing-20) applied as font size? */
+    line-height: 1.4;
+    color: var(--color-grey-dark);
+    /* Grey-20 #333 */
+}
+
+.feature-more {
+    width: 100%;
+    text-align: right;
+    margin-top: 0;
+    color: var(--color-brand-blue-light);
+    /* Azure-61 */
+    font-size: 20px;
+}
+
+/* Trusted By Section */
+.trusted-by {
+    /* Locofy: padding: var(--padding-50) var(--padding-20); gap: var(--item-spacing-49); */
+    padding: 50px 20px;
+}
+
+.logos-group {
+    margin-bottom: 49px;
+}
+
+.logos-title {
+    font-size: 36px;
+    color: var(--color-brand-orange);
+    text-align: center;
+    margin-bottom: 30px;
+    /* var(--item-spacing-30) */
+}
+
+.logos-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px 64px;
+    /* gap-y-8 gap-x-16 */
+}
+
+.logo-item {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-item img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 50px 20px;
+}
+
+.testimonials-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.testimonials-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.testimonial-card {
+    flex: 0 0 420px;
+    height: 420px;
+    background-color: var(--color-white);
+    border: 3px solid var(--color-brand-green);
+    border-radius: var(--radius-md);
+    /* rounded-2xl */
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-profile {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.testimonial-avatar {
+    width: 128px;
+    height: 128px;
+    border-radius: var(--radius-sm);
+    border: 6px solid var(--color-brand-orange);
+    object-fit: cover;
+}
+
+.testimonial-info h4 {
+    font-size: 24px;
+}
+
+.testimonial-role {
+    color: var(--color-brand-pink);
+    font-size: 18px;
+}
+
+.testimonial-quote {
+    font-size: 20px;
+    overflow: hidden;
+    height: 112px;
+    /* h-28 approx */
+    position: relative;
+    /* fade out effect could be added */
+}
+
+.testimonial-link {
+    text-align: right;
+    color: var(--color-link);
+    font-weight: 700;
+}
+
+/* Misc Section */
+.misc {
+    padding: var(--spacing-3xl) 0;
+}
+
+.misc-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+.misc-card-wrapper {
+    position: relative;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.misc-card-wrapper:hover {
+    transform: scale(1.05);
+    /* zoom-button */
+}
+
+.misc-card-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Locofy: padding: 59.9px 16px; gap: 56px; */
+    border-radius: 31px;
+    padding: 60px 16px;
+    color: var(--color-white);
+    height: 417px;
+    /* Restored fixed height per design */
+    /* overflow: hidden; Removed to allow Gnome to protrude */
+    position: relative;
+    gap: 56px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-use-cases {
+    background-color: var(--color-brand-orange);
+}
+
+.card-faq {
+    background-color: var(--color-brand-azure-medium);
+    /* Azure-37 */
+}
+
+.card-api {
+    background-color: var(--color-brand-green);
+}
+
+.card-security {
+    background-color: var(--color-brand-pink);
+}
+
+.card-icon-area {
+    width: 136px;
+    height: 136px;
+    /* margin: 56px auto; removed in favor of flex gap */
+}
+
+.card-icon-area img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-title-area {
+    /* height: 86px; removed fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 60px;
+    /* Locofy: 59.9px */
+    line-height: 1.2;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* New Ellipse Shadow */
+.card-shadow {
+    width: 100%;
+    height: 16px;
+    margin-top: 12px;
+    border-radius: 50%;
+    /* Ellipse shape */
+    filter: blur(4px);
+    /* Optional: blur for shadow effect */
+}
+
+/* Wrapper classes for shadow coloring */
+.wrapper-use-cases .card-shadow {
+    background-color: var(--color-brand-orange-shadow);
+}
+
+.wrapper-faq .card-shadow {
+    background-color: var(--color-brand-azure-shadow);
+}
+
+.wrapper-api .card-shadow {
+    background-color: var(--color-brand-green-shadow);
+}
+
+.wrapper-security .card-shadow {
+    background-color: var(--color-brand-pink-shadow);
+}
+
+/* Gnome Overlay for API Card */
+.card-gnome-overlay {
+    position: absolute;
+    bottom: 3px;
+    left: 15px;
+    width: 88px;
+    height: 210px;
+    z-index: 10;
+    /* Above card */
+    pointer-events: none;
+}
+
+.card-gnome-overlay img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wrapper-faq .card-shadow {
+    background-color: var(--color-brand-azure-shadow);
+}
+
+.wrapper-api .card-shadow {
+    background-color: var(--color-brand-green-shadow);
+}
+
+.wrapper-security .card-shadow {
+    background-color: var(--color-brand-pink-shadow);
+}
+
+/* Schedule Demo Section */
+.schedule-demo {
+    padding: var(--spacing-3xl) 0;
+}
+
+.schedule-box {
+    /* Locofy: linear-gradient(157.96deg, Cyan-73, Cyan-43) */
+    background: linear-gradient(158deg, var(--color-brand-cyan-light), var(--color-brand-cyan));
+    border-radius: 30px;
+    padding: 60px 20px;
+    /* Mobile responsive padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .schedule-box {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px 120px;
+        /* Locofy Desktop padding */
+    }
+}
+
+.schedule-text {
+    color: var(--color-white);
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .schedule-text {
+        text-align: left;
+    }
+}
+
+.schedule-title {
+    font-size: 36px;
+    /* text-4xl */
+    line-height: 1.2;
+}
+
+@media (min-width: 1024px) {
+    .schedule-title {
+        font-size: 76px;
+    }
+}
+
+.schedule-subtitle {
+    font-size: 24px;
+    /* text-2xl */
+    margin-top: 16px;
+}
+
+@media (min-width: 1024px) {
+    .schedule-subtitle {
+        font-size: 46px;
+    }
+}
+
+.schedule-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.btn-schedule {
+    background-color: var(--color-white);
+    color: var(--color-text-main);
+    font-weight: 700;
+    font-size: 24px;
+    padding: 12px 32px;
+    border-radius: var(--radius-full);
+    white-space: nowrap;
+    transition: transform 0.2s;
+}
+
+.btn-schedule:hover {
+    transform: scale(1.05);
+}

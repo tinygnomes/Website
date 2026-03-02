@@ -1,53 +1,32 @@
 # TinyGnomes Website
 
-This repository contains the source code for the TinyGnomes website.
+TinyGnomes is a secure cloud-based suite of tools for project management.
+This project contains the source code for the **marketing website** (not the service itself).
 
-## Features
+The website is designed to be:
+*   **Simple and Clean**: Focusing on clarity and ease of use.
+*   **Responsive**: Working seamlessly across desktop and mobile devices.
+*   **Visually Engaging**: Utilizing a two-column hero layout and interactive mouse-over animations.
 
-*   Simple and clean design.
-*   Responsive layout for various devices.
-*   Built with modern web technologies.
+This repository follows an **AI-Assisted Literate Programming (ALP)** workflow.
+The Markdown files in this root directory are the **single source of truth**.
 
-## Technologies Used
+## Table of Contents
 
-*   HTML5
-*   CSS3 (with Tailwind CSS)
-*   JavaScript
+- Introduction
+    - [Project Overview](Overview.md)
+    - [Introduction to AI-assisted Literate Programming (ALP)](ALP.md)
+    - [Figma workflow](FigmaWorkflow.md)
+    - [Agent Instructions](GEMINI.md)
+- The website pages
+    - [Home Page](Home.md)
+    - [Calendar Feature Page](Calendar.md)
+- Tools
+    - [Local Development Server](server.py)
+    - [Figma MCP Server](figma_mcp.md)
+- [TODO list](TODO.md)
 
-## Installation
+## Quick Start
 
-To set up the project locally, follow these steps:
-
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/tinygnomes/Website.git
-    cd Website
-    ```
-2.  **Install dependencies (if any, for Tailwind CSS compilation):**
-    ```bash
-    npm install
-    ```
-
-## Usage
-
-To view the website:
-
-### Development
-
-1.  **Start Tailwind CSS compilation in watch mode:**
-    This command watches for changes in `website/src/input.css` and compiles the output to `website/dist/output.css`.
-    ```bash
-    npm run dev
-    ```
-
-### Production Build
-
-1.  **Compile Tailwind CSS for production:**
-    This command compiles and minifies the CSS from `website/src/input.css` to `website/dist/output.css`.
-    ```bash
-    npm run build
-    ```
-
-### Viewing the Website
-
-1.  **Open `website/index.html` in your web browser.****
+The website is static. You can view it by opening `website/index.html` in your browser.
+No build steps are required for the CSS or HTML.
