@@ -3,7 +3,7 @@
 
 # TODO list
 
-- [ ] Remove Tailwind classes and ensure adherence to Figma design
+- [X] Remove Tailwind classes and ensure adherence to Figma design
 - [ ] Establish on Figma the design for all the other pages
 - [ ] Move Header and Footer to their own chapter
 - [ ] Review fonts used in the pages, remove unused fonts
