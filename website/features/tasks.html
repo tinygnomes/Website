@@ -1,135 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tiny Gnomes - Tasks Feature</title>
-    <meta
-      name="description"
-      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
-    />
-    <link rel="icon" href="../assets/favicon.png" />
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tiny Gnomes" />
-    <meta
-      property="og:description"
-      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
-    />
-    <meta property="og:image" content="../assets/social-share.png" />
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tiny Gnomes" />
-    <meta
-      name="twitter:description"
-      content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page."
-    />
-    <meta name="twitter:image" content="../assets/social-share.png" />
-    <link rel="canonical" href="https://website.tinygnomes.com/features/tasks" />
-    <link href="../dist/output.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter&family=Raleway:wght@400;700&family=Rancho&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="font-raleway">
-    <header class="sticky top-0 bg-white z-50 h-[114px] shadow-md">
-      <nav class="container mx-auto px-6 h-full flex justify-between items-center">
-        <div class="flex items-center">
-          <a href="../" class="flex items-center">
-            <img src="../assets/tg.svg" alt="TinyGnomes Logo" class="h-[72px]" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiny Gnomes - Tasks</title>
+  <meta name="description"
+    content="Tiny Gnomes tasks feature. View the big picture Or, laser focus on just one project." />
+  <link rel="icon" href="../assets/favicon.png" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tiny Gnomes - Tasks" />
+  <meta property="og:description"
+    content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page." />
+  <meta property="og:image" content="../assets/social-share.png" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tiny Gnomes - Tasks" />
+  <meta name="twitter:description"
+    content="Tiny Gnomes is a secure cloud-based suite of tools for project management. Finally, get your team on the same page." />
+  <meta name="twitter:image" content="../assets/social-share.png" />
+  <link rel="canonical" href="https://website.tinygnomes.com/features/tasks.html" />
+
+  <!-- CSS -->
+  <link href="../css/style.css" rel="stylesheet" />
+  <link href="../css/calendar.css" rel="stylesheet" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter:wght@400;700&family=Raleway:wght@400;700&family=Rancho&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="container nav-container">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/tg.svg" alt="TinyGnomes Logo" />
+        </a>
+      </div>
+
+      <!-- Desktop Nav -->
+      <div class="main-nav hidden-mobile">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="../index.html#features" class="nav-link">Features</a>
+        <a href="../pricing" class="nav-link">Pricing</a>
+        <a href="../index.html#testimonials" class="nav-link">Testimonials</a>
+        <a href="../faq" class="nav-link">FAQ</a>
+      </div>
+
+      <div class="nav-auth hidden-mobile">
+        <a href="../contact" class="link-signup">Sign up</a>
+        <a href="https://www.tinygnomes.com/quilt.fcgi" class="btn-login">Login</a>
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="hidden-desktop">
+        <button class="mobile-menu-btn">
+          <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+            width="24" height="24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div class="mobile-menu-overlay">
+        <div class="mobile-menu-header">
+          <button class="mobile-menu-close">&times;</button>
+        </div>
+        <div class="mobile-nav-links">
+          <a href="../index.html" class="nav-link-mobile">Home</a>
+          <a href="../index.html#features" class="nav-link-mobile">Features</a>
+          <a href="../pricing" class="nav-link-mobile">Pricing</a>
+          <a href="../index.html#testimonials" class="nav-link-mobile">Testimonials</a>
+          <a href="../faq" class="nav-link-mobile">FAQ</a>
+        </div>
+        <div class="mobile-nav-auth">
+          <a href="../contact" class="link-signup">Sign up</a>
+          <a href="https://www.tinygnomes.com/quilt.fcgi" class="btn-login"
+            style="background-color: var(--color-brand-green); color: white; padding: 8px 24px; border-radius: 9999px;">Login</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="calendar-page-main">
+
+    <!-- 1. Feature Header -->
+    <section class="calendar-header-section">
+      <h1 class="calendar-main-title">Tasks</h1>
+      <div class="calendar-title-underline"></div>
+    </section>
+
+    <!-- 2. Hero Section -->
+    <section class="calendar-hero-section">
+      <div class="calendar-hero-bg">
+        <img src="../assets/calendar-bg.png" alt="Hero background shape" />
+      </div>
+      <div class="calendar-hero-content">
+        <div class="calendar-hero-left">
+          <h1 class="calendar-hero-headline">
+            View the big picture Or, laser focus on just one project.
+          </h1>
+          <div class="calendar-hero-icon-container">
+            <div class="calendar-hero-icon">
+              <!-- Using the same icon from the home page features section -->
+              <img src="../assets/tasks-icon.png" alt="Tasks icon" />
+            </div>
+          </div>
+        </div>
+        <div class="calendar-hero-right">
+          <!-- The main calendar app screenshot -->
+          <img src="../assets/tasks-screenshot.png" alt="Tiny Gnomes Tasks Interface" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Introduction Section -->
+    <section class="calendar-intro-section">
+      <h3 class="calendar-intro-text">
+        Never drop the ball, and keep your team laser focused.  There are no tricks.  Decades of Project Management has taught us it’s all about communication.  Meet with your team, review, review, review.
+      </h3>
+    </section>
+
+    <!-- 4. Feature List (Unordered) -->
+    <section class="calendar-features-list-section">
+      <ul class="calendar-features-ul">
+        <li><strong>Roles</strong> - There are three roles:</li>
+        <li><strong>Filters</strong> - It is easy to filter down to just the tasks you care about. Always start with Ticklers, which default to showing you your own tasks you need to accept. Change this to "All" and see all tasks.</li>
+        <li><strong>Import/Export</strong> - Tasks can be exported and imported from popular Spreadsheet applications. This allows you to work offline, building or changing complex task lists and import them back in quickly.</li>
+      </ul>
+    </section>
+
+    <!-- 5. Additional Features List (Ordered) -->
+    <section class="calendar-additional-features-section">
+      <h1 class="calendar-additional-features-title">
+        Great features you won't want to live without
+      </h1>
+      <div class="calendar-additional-features-box">
+        <ol class="calendar-features-ol">
+          <li><strong>Start or end date</strong> - If set, the day before the task will turn dark red. On the date and after, it will be bright red.</li>
+          <li><strong>Time</strong> - Set the estimated time, as a metric for reports. Track exactly when and for how long you worked on a task.</li>
+          <li><strong>Priority</strong> - The magic of staying on top of things.</li>
+          <li><strong>Milestones</strong> - Milestones are treated in a very simple way. It is a single date, that you give a label, like "200 days out" or "Beta". When you give a task a milestone, it will turn dark red. On the date and after, it will be bright red. Compare this to a "deadline" set for an entire project, which when passed, ALL tasks will turn red.</li>
+          <li><strong>Private</strong> - Only Leads in the project, and people invited to the task directly will be able to see the task, or the conversations in it.</li>
+          <li><strong>Calendar</strong> - Put the task on your calendar. This has many options such as having the task follow you from day to day, or simply place the task on a specific day.</li>
+          <li><strong>Remind</strong> - Want to remind yourself with an email, or even the whole team? Easy!</li>
+          <li><strong>Recurring</strong> - Do you need to make sure someone does something every week, or every month? Never let the ball drop.</li>
+          <li><strong>Category</strong> - Group like tasks together, and if you need even finer resolution, there is a sub-category as well.</li>
+          <li><strong>History</strong> - Quickly see everything that ever happened on a task.</li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container ">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <img src="../assets/tg.svg" alt="TinyGnomes Logo" style="height: 64px; margin-bottom: 16px;" />
+          <p style="color: var(--color-text-body); margin-top: 32px;">Tiny Gnomes is a secure cloud-based suite of tools
+            for project management.</p>
+          <p style="color: var(--color-text-body); margin-top: 16px;">Finally, get your team on the same page.</p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-column">
+            <h6>Tiny Gnomes</h6>
+            <a href="../about">About Us</a>
+            <a href="../terms">Terms & Privacy</a>
+            <a href="../security">Security</a>
+          </div>
+
+          <div class="footer-column">
+            <h6>Solutions</h6>
+            <a href="../white-label">Customers</a>
+            <a href="../white-label">GavelAI (law)</a>
+            <a href="../white-label">Conductor Live (Sales)</a>
+            <a href="../white-label">White Label</a>
+          </div>
+
+          <div class="footer-column">
+            <h6>Resources</h6>
+            <a href="../faq">FAQ</a>
+            <a href="../contact">Contact Us</a>
+            <a href="../integration">Integration</a>
+            <a href="../api">Developer & API</a>
+          </div>
+        </div>
+
+        <div class="footer-app-downloads">
+          <h6 style="margin-bottom: 8px; font-weight: 700;">Get the app</h6>
+          <a href="https://www.tinygnomes.com/app" rel="noopener" class="app-btn">
+            <img src="../assets/app-store.png" alt="Download on the App Store" />
+          </a>
+          <a href="https://www.tinygnomes.com/app" rel="noopener" class="app-btn">
+            <img src="../assets/google-play.png" alt="Get it on Google Play" />
           </a>
         </div>
-        <div class="hidden md:flex items-center space-x-2 border-3 border-brand-green rounded-full px-6 py-4 text-[28px]">
-          <a href="../" class="bg-brand-orange text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Home</a>
-          <a href="../#features" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Features</a>
-          <a href="../pricing" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Pricing</a>
-          <a href="../#testimonials" class="text-light-blue hover:text-opacity-90 hover:underline px-2">Testimonials</a>
-          <a href="../faq" class="text-light-blue hover:text-opacity-90 hover:underline px-2">FAQ</a>
-        </div>
-        <div class="hidden md:flex items-center space-x-4 text-[28px]">
-          <a href="../contact" class="text-light-blue hover:text-opacity-90 hover:underline">Sign up</a>
-          <a href="https://www.tinygnomes.com/quilt.fcgi" class="bg-brand-green text-white px-6 py-2 rounded-full hover:opacity-75 hover:text-light-blue font-bold">Login</a>
-        </div>
-        <div class="md:hidden">
-          <button class="text-gray-600 hover:text-gray-900 focus:outline-none">
-            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-      </nav>
-    </header>
-    <main>
-        <section class="container mx-auto px-6 py-12">
-            <h1 class="text-4xl font-bold text-dark-blue mb-8">Tasks Feature</h1>
-            <p class="text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </section>
-    </main>
-    <footer class="bg-gray-100 pt-12 pb-24 relative footer-top-shadow">
-      <div class="container mx-auto px-6 flex flex-wrap justify-between text-sm">
-        <div class="w-full md:w-1/4 mb-8 md:mb-0">
-          <img src="../assets/tg.svg" alt="TinyGnomes Logo" class="h-16 mb-4" />
-          <p class="text-gray-600 mt-8">Tiny Gnomes is a secure cloud-based suite of tools for project management.</p>
-          <p class="text-gray-600 mt-4">Finally, get your team on the same page.</p>
-        </div>
-        <div class="w-full md:w-1/2 flex justify-around">
-          <div class="space-y-2">
-            <h6 class="font-bold">Tiny Gnomes</h6>
-            <a href="../about" class="block text-light-blue hover:underline mt-8">About Us</a>
-            <a href="../terms" class="block text-light-blue hover:underline">Terms & Privacy</a>
-            <a href="../security" class="block text-light-blue hover:underline">Security</a>
-          </div>
-          <div class="space-y-2">
-            <h6 class="font-bold">Solutions</h6>
-            <a href="../white-label" class="block text-light-blue hover:underline mt-8">Customers</a>
-            <a href="../white-label" class="block text-light-blue hover:underline">GavelAI (law)</a>
-            <a href="../white-label" class="block text-light-blue hover:underline">Conductor Live (Sales)</a>
-            <a href="../white-label" class="block text-light-blue hover:underline">White Label</a>
-          </div>
-          <div class="space-y-2">
-            <h6 class="font-bold">Resources</h6>
-            <a href="../faq" class="block text-light-blue hover:underline mt-8">FAQ</a>
-            <a href="../contact" class="block text-light-blue hover:underline">Contact Us</a>
-            <a href="../integration" class="block text-light-blue hover:underline">Integration</a>
-            <a href="../api" class="block text-light-blue hover:underline">Developer & API</a>
-          </div>
-        </div>
-        <div class="w-full md:w-1/4 mt-8 md:mt-0 flex flex-col items-center">
-          <h6 class="font-bold mb-2">Get the app</h6>
-          <div class="flex flex-col space-y-4">
-            <a
-              href="https://www.tinygnomes.com/app"
-              rel="noopener"
-              class="w-[150px] h-[50px] bg-black rounded-lg flex justify-center items-center p-1"
-            >
-              <img src="../assets/app-store.png" alt="Download on the App Store" class="object-contain h-full" />
-            </a>
-            <a
-              href="https://www.tinygnomes.com/app"
-              rel="noopener"
-              class="w-[150px] h-[50px] bg-black rounded-lg flex justify-center items-center p-1"
-            >
-              <img src="../assets/google-play.png" alt="Get it on Google Play" class="object-contain h-full" />
-            </a>
-          </div>
-        </div>
       </div>
-      <div class="cookie-policy fixed bottom-4 inset-x-0 flex justify-center items-center z-50" style="display: none">
-        <div class="bg-white rounded-lg shadow-2xl p-4 flex items-center justify-between gap-6 max-w-2xl mx-4">
-          <p class="text-sm text-gray-700">
-            This website only uses technical cookies (if you login).
-            <a href="../terms" class="text-light-blue hover:underline">Learn More…</a>
-          </p>
-          <div class="flex-shrink-0">
-            <button class="cookie-accept-button text-sm font-semibold py-2 px-4 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800">
-              Ok
-            </button>
-          </div>
-        </div>
+    </div>
+
+    <div class="cookie-banner">
+      <div class="cookie-content">
+        <p style="font-size: 14px; color: var(--color-grey-dark);">
+          This website only uses technical cookies (if you login).
+          <a href="../terms" style="color: var(--color-link); text-decoration: underline;">Learn More…</a>
+        </p>
+        <button class="btn-accept">Ok</button>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+
+  <script src="../js/animations.js"></script>
+</body>
+
 </html>

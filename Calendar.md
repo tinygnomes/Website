@@ -26,7 +26,7 @@ The main body (`<main>`) includes the following sections:
 
 ## Logic
 
-Unlike the home page, the Calendar feature page contains **no animations**. The content should be fully visible on render.
+Unlike the home page, the Calendar feature page contains **no entrance animations**. However, the calendar icon and screenshot feature a hover zoom effect similar to the home page hero illustration. The content should be fully visible on render.
 No JavaScript is required for this page's core functionality (the mobile menu logic from `animations.js` can still apply to the shared header).
 
 - [Next Chapter](Compliance.md)

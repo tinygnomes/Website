@@ -116,6 +116,11 @@
     height: 250px;
     border-radius: var(--radius-sm);
     overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.calendar-hero-icon:hover {
+    transform: scale(1.3);
 }
 
 .calendar-hero-icon img {
@@ -128,7 +133,6 @@
     flex: 1;
     min-width: 350px;
     z-index: 2;
-    overflow: hidden;
     position: sticky;
     top: 0;
 }
@@ -140,6 +144,11 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     /* Slight shadow for the app screenshot */
     border-radius: var(--radius-sm);
+    transition: transform 0.3s ease;
+}
+
+.calendar-hero-right img:hover {
+    transform: scale(1.1);
 }
 
 /* 3. Introduction Section */
