@@ -1,0 +1,15 @@
+<svg width="1511" height="941" viewBox="0 0 1511 941" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_16_8)">
+<rect width="1511" height="941" fill="white"/>
+<path d="M559.5 811L553.3 818.846L560.016 824.152L566.295 818.337L559.5 811ZM1388.99 52.3828C1389.2 46.864 1384.9 42.2187 1379.38 42.0072L1289.45 38.5602C1283.93 38.3487 1279.29 42.6511 1279.07 48.1699C1278.86 53.6887 1283.16 58.3341 1288.68 58.5456L1368.62 61.6095L1365.56 141.551C1365.35 147.07 1369.65 151.715 1375.17 151.926C1380.69 152.138 1385.33 147.836 1385.55 142.317L1388.99 52.3828ZM559.5 811L566.295 818.337L1385.8 59.3365L1379 51.9998L1372.2 44.6632L552.705 803.663L559.5 811ZM559.5 811L565.699 803.154L191.7 507.654L185.5 515.5L179.3 523.346L553.3 818.846L559.5 811Z" fill="#FFBB00"/>
+<path d="M456.5 384C482 407.167 517.7 465.9 456.5 515.5" stroke="#FF8888" stroke-opacity="0.5" stroke-width="10" stroke-dasharray="10 10"/>
+<path d="M957.5 873C983 896.167 778.5 987.5 673.5 890" stroke="#FF8888" stroke-opacity="0.5" stroke-width="10" stroke-dasharray="10 10"/>
+<path d="M1346 293C1371.5 316.167 1463 327 1413 448.5" stroke="#FF8888" stroke-opacity="0.5" stroke-width="10" stroke-dasharray="10 10"/>
+<path d="M630.5 277C605 300.167 619.092 455.9 680.292 505.5" stroke="#FF8888" stroke-opacity="0.5" stroke-width="10" stroke-dasharray="10 10"/>
+</g>
+<defs>
+<clipPath id="clip0_16_8">
+<rect width="1511" height="941" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -118,7 +118,7 @@
     position: relative;
     width: 100%;
     max-width: 888px;
-    aspect-ratio: 888/587;
+    aspect-ratio: 1511/941;
     margin-top: var(--spacing-xl);
 }
 
@@ -145,10 +145,7 @@
 
 .hero-bg-img {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    z-index: 0;
 }
 
 /* Absolute Positioning for Hero Elements from existing HTML */
@@ -158,19 +155,16 @@
     transition: transform 0.3s ease;
 }
 
-.abs-img:hover {
+.zoom-normal:hover {
     transform: scale(1.3);
 }
 
 /* Specific Shake/Zoom overrides */
-.abs-img[src*="Gnome.png"]:hover,
-.abs-img[src*="Tree.png"]:hover {
+.zoom-lg:hover {
     transform: scale(1.6);
 }
 
-.abs-img[src*="StayOnPath.png"]:hover,
-.abs-img[src*="GetShitDone.png"]:hover,
-.abs-img[src*="Focus.png"]:hover {
+.zoom-none:hover {
     transform: scale(1);
     /* Disable zoom */
 }
