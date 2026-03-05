@@ -45,7 +45,7 @@
     margin-bottom: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .hero-headline {
         font-size: 60px;
         line-height: 72px;
@@ -61,7 +61,7 @@
     font-weight: 700;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .hero-headline .highlight-big {
         font-size: 112px;
         line-height: 112px;
@@ -77,7 +77,7 @@
     margin-top: 0;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .hero-subheadline {
         font-size: 60px;
         line-height: 72px;
@@ -177,12 +177,18 @@
 
 .section-title {
     text-align: center;
-    font-size: 60px;
+    font-size: 40px;
     color: var(--color-brand-azure-medium);
     /* Azure-37 */
     margin-bottom: 50px;
     /* var(--item-spacing-50) */
     font-weight: 700;
+}
+
+@media (min-width: 1440px) {
+    .section-title {
+        font-size: 60px;
+    }
 }
 
 .features-grid {
@@ -514,11 +520,17 @@
 }
 
 .card-title {
-    font-size: 60px;
+    font-size: 40px;
     /* Locofy: 59.9px */
     line-height: 1.2;
     text-align: center;
     font-weight: 700;
+}
+
+@media (min-width: 1440px) {
+    .card-title {
+        font-size: 60px;
+    }
 }
 
 /* New Ellipse Shadow */
@@ -622,7 +634,7 @@
     line-height: 1.2;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .schedule-title {
         font-size: 76px;
     }
@@ -634,7 +646,7 @@
     margin-top: 16px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
     .schedule-subtitle {
         font-size: 46px;
     }
