@@ -6,7 +6,7 @@
 - [X] Implement scrolling of the various logos in the trusted-by section
 - [X] Reduce/remove margins around hero illustration in mobile mode
 - [X] Smaller fonts on mobile?
-- [ ] Testimonials with dots like apple.com
+- [X] Testimonials with dots like apple.com
 - [X] Link to API page
 - [X] Remove Tailwind classes and ensure adherence to Figma design
 - [ ] Establish on Figma the design for all the other pages

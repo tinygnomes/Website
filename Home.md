@@ -95,6 +95,49 @@ Individual images in the hero section zoom on hover:
 The logos in the trusted by section should scroll horizontally, and fade out at the edges. The scroll should be continuous and smooth, and the logos should be duplicated to create the illusion of an infinite scroll. The fade should be linear, with the logos at the edges being fully transparent and the logos in the center being fully opaque. The visible area needs to adapt to the screen size to achieve a responsive design.
 The first row of logos should scroll towards the left, the second towards the right, and the third again towards the left.
 
+### Testimonial Carousel Dots
+
+On mobile viewports only one testimonial card is visible at a time. To let users know there are more cards and navigate between them, we use **CSS scroll-snap** combined with **dot indicators** (à la apple.com).
+
+#### CSS
+
+*   `.testimonials-scroll` gets `scroll-snap-type: x mandatory` so the scroll position snaps to each card.
+*   `.testimonial-card` gets `scroll-snap-align: center`.
+*   On mobile the card width becomes `100%` (instead of the fixed `420px` used on desktop).
+
+#### Dot Indicators
+
+A `<div class="testimonials-dots">` is placed after `.testimonials-scroll` in the HTML, containing one `<button>` per card.
+
+```pseudo-code
+// On DOMContentLoaded
+[cards]  = all .testimonial-card elements
+[dots]   = all .testimonials-dots button elements
+[scroll] = .testimonials-scroll container
+
+// Find which card's center is closest to the container's center
+function getActiveDotIndex():
+  [containerCenter] = horizontal midpoint of [scroll]
+  for each [card] at [index] in [cards]:
+    [cardCenter] = horizontal midpoint of [card]
+    track the [index] with smallest |cardCenter - containerCenter|
+  return closest index
+
+function updateDots():
+  set active class on dot at getActiveDotIndex(), remove from all others
+
+listen to scroll event on [scroll] -> updateDots()
+call updateDots() on load
+
+// Clicking a dot scrolls that card to the center of the container
+for each [dot] at [index] in [dots]:
+  on click: calculate scrollLeft offset to center [cards][index], then scrollTo({ left, behavior: 'smooth' })
+```
+
+#### Visibility
+
+The dots are always visible, since the cards can overflow at many viewport sizes — not just mobile.
+
 ### Interactions
 *   Hover effects are handled by CSS (`global.css` has hover states).
 *   Mobile menu: TODO

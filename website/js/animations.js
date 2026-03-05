@@ -111,4 +111,63 @@ document.addEventListener("DOMContentLoaded", function () {
   // Run on load and hash change
   updateActiveLink();
   window.addEventListener("hashchange", updateActiveLink);
+
+  // 5. Testimonial Carousel Dots
+  const testimonialsScroll = document.querySelector(".testimonials-scroll");
+  const testimonialCards = document.querySelectorAll(".testimonial-card");
+  const testimonialDots = document.querySelectorAll(".testimonials-dots button");
+
+  if (testimonialsScroll && testimonialCards.length && testimonialDots.length) {
+    // Find which card's center is closest to the container's center
+    function getActiveDotIndex() {
+      const containerRect = testimonialsScroll.getBoundingClientRect();
+      const containerCenter = containerRect.left + containerRect.width / 2;
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      testimonialCards.forEach((card, index) => {
+        const cardRect = card.getBoundingClientRect();
+        const cardCenter = cardRect.left + cardRect.width / 2;
+        const distance = Math.abs(cardCenter - containerCenter);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      return closestIndex;
+    }
+
+    function updateDots() {
+      const activeIndex = getActiveDotIndex();
+      testimonialDots.forEach((d, i) => {
+        d.classList.toggle("active", i === activeIndex);
+      });
+    }
+
+    // Update on scroll
+    testimonialsScroll.addEventListener("scroll", updateDots, { passive: true });
+
+    // Initial state
+    updateDots();
+
+    // Click a dot to scroll that card to the center of the container
+    testimonialDots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        const card = testimonialCards[index];
+        const containerRect = testimonialsScroll.getBoundingClientRect();
+        const cardRect = card.getBoundingClientRect();
+        const scrollOffset =
+          cardRect.left -
+          containerRect.left -
+          (containerRect.width - cardRect.width) / 2 +
+          testimonialsScroll.scrollLeft;
+
+        testimonialsScroll.scrollTo({
+          left: scrollOffset,
+          behavior: "smooth",
+        });
+      });
+    });
+  }
 });
