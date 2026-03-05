@@ -91,6 +91,9 @@ Individual images in the hero section zoom on hover:
 *   **Gnome** & **Trees**: Scale 1.6x
 *   **Slogans** ("Stay on path", "Get sh*t done", "Focus"): No zoom
 
+### Trusted by logos
+The logos in the trusted by section should scroll horizontally, and fade out at the edges. The scroll should be continuous and smooth, and the logos should be duplicated to create the illusion of an infinite scroll. The fade should be linear, with the logos at the edges being fully transparent and the logos in the center being fully opaque. The visible area needs to adapt to the screen size to achieve a responsive design.
+The first row of logos should scroll towards the left, the second towards the right, and the third again towards the left.
 
 ### Interactions
 *   Hover effects are handled by CSS (`global.css` has hover states).

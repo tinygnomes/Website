@@ -22,6 +22,28 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(section);
   });
 
+  // 1.5 Infinite Horizontal Scroll for Logos
+  const logosGroups = document.querySelectorAll(".logos-group");
+  logosGroups.forEach((group, index) => {
+    const flexContainer = group.querySelector(".logos-flex");
+    if (!flexContainer) return;
+
+    const scrollContainer = document.createElement("div");
+    scrollContainer.className = "logos-scroll-container";
+
+    const track = document.createElement("div");
+    track.className = "logos-track";
+    if (index === 1) track.classList.add("reverse"); // Second row backwards
+
+    const flexClone = flexContainer.cloneNode(true);
+    flexClone.setAttribute("aria-hidden", "true");
+
+    flexContainer.parentNode.insertBefore(scrollContainer, flexContainer);
+    scrollContainer.appendChild(track);
+    track.appendChild(flexContainer);
+    track.appendChild(flexClone);
+  });
+
   // 2. Cookie Banner Logic
   const cookieBanner = document.querySelector(".cookie-banner");
   const acceptButton = document.querySelector(".btn-accept");

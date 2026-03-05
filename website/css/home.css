@@ -298,6 +298,49 @@
 
 .logos-group {
     margin-bottom: 49px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.logos-scroll-container {
+    width: 100%;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.logos-track {
+    display: flex;
+    width: max-content;
+    animation: scroll-left 20s linear infinite;
+}
+
+.logos-track.reverse {
+    animation: scroll-right 20s linear infinite;
+}
+
+.logos-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .logos-title {
@@ -310,11 +353,11 @@
 
 .logos-flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     align-items: center;
-    gap: 32px 64px;
-    /* gap-y-8 gap-x-16 */
+    gap: 64px;
+    padding-right: 64px;
 }
 
 .logo-item {
