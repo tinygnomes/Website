@@ -7,7 +7,7 @@
 - [X] Reduce/remove margins around hero illustration in mobile mode
 - [X] Smaller fonts on mobile?
 - [ ] Testimonials with dots like apple.com
-- [ ] Link to API page
+- [X] Link to API page
 - [X] Remove Tailwind classes and ensure adherence to Figma design
 - [ ] Establish on Figma the design for all the other pages
 - [ ] Move Header and Footer to their own chapter
