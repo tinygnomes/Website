@@ -4,7 +4,7 @@
 # TODO list
 
 - [X] Implement scrolling of the various logos in the trusted-by section
-- [ ] Reduce/remove margins around hero illustration in mobile mode
+- [X] Reduce/remove margins around hero illustration in mobile mode
 - [ ] Smaller fonts on mobile?
 - [ ] Testimonials with dots like apple.com
 - [ ] Link to API page

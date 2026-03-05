@@ -18,9 +18,9 @@
     display: flex;
     flex-direction: column;
     /* Locofy: padding: var(--padding-50) var(--padding-60); gap: var(--item-spacing-52); */
-    padding: 50px 60px;
+    padding: 50px 20px;
     align-items: center;
-    gap: 52px;
+    gap: 100px;
 }
 
 @media (min-width: 1024px) {
@@ -171,7 +171,7 @@
 
 /* Features Section */
 .features {
-    padding: 50px 60px;
+    padding: 50px 20px;
     /* var(--padding-50) var(--padding-60) */
 }
 
@@ -189,7 +189,7 @@
     display: grid;
     grid-template-columns: 1fr;
     /* Locofy: gap: 29.4px 30px; */
-    gap: 30px;
+    gap: 20px;
 }
 
 @media (min-width: 768px) {
